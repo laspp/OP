@@ -1,0 +1,19 @@
+.footnote-ref {
+    @apply opacity-70;
+}
+
+.footnotes-sep {
+    display: none;
+}
+
+.footnotes {
+    @apply abs-b m-5 pl-10 text-sm opacity-70 border-t-1;
+}
+
+.footnotes-rel {
+    @apply rel-b m-2 pl-2 text-sm opacity-70 border-t-1;
+}
+
+.footnote-backref {
+    display: none;
+}

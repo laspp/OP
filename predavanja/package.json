@@ -1,0 +1,19 @@
+{
+  "name": "01-osnove",
+  "private": true,
+  "scripts": {
+    "build": "slidev build",
+    "dev": "slidev --open",
+    "export": "slidev export"
+  },
+  "dependencies": {
+    "@slidev/cli": "^0.39.0",
+    "@slidev/theme-bricks": "^0.0.2",
+    "@slidev/theme-default": "*",
+    "@slidev/theme-seriph": "*",
+    "slidev-theme-academic": "^1.1.1"
+  },
+  "devDependencies": {
+    "playwright-chromium": "^1.30.0"
+  }
+}
