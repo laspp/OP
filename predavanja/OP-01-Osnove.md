@@ -1,6 +1,7 @@
 ---
 title: Osnove osnov programiranja
-exportFilename: 'OP-01-Osnove.pdf' 
+exportFilename: 'OP-01-Osnove.pdf'
+download: true
 info: Predavanja pri predmetu Osnove programiranja
 theme: default
 background: false
