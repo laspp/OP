@@ -14,8 +14,8 @@ transition: fade-out
 css: unocss
 layout: cover
 ---
-<!-- TODO: progress bar na vrhu prvega slida -->
-<!-- TODO: custom template za image-left in -right ki vzame tudi besedilo za na dno -->
+
+<ProgressBar bgcolor="#e11d48" completed="1" total="13"/>
 
 # Osnove osnov programiranja
 
@@ -23,13 +23,13 @@ Osnove programiranja
 
 Nejc Ilc
 
-<div class="abs-b m-6 flex gap-1 items-center justify-end">
-  <div><mdi-map-marker class="opacity-70"/> R2.41</div>
-  <a class="text-2xl icon-btn opacity-70 !border-none !hover:text-gray" href="https://fri.uni-lj.si/sl/o-fakulteti/osebje/nejc-ilc"><mdi-web-box/></a>
-  <a class="text-2xl icon-btn opacity-70 !border-none !hover:text-gray" href="mailto:nejc.ilc@fri.uni-lj.si?subject=[OP-FKKT] "><mdi-email/></a>
+<div class="abs-b m-6 flex gap-1 items-center justify-end text-red-600 opacity-100">
+  <div><mdi-map-marker/> R2.41</div>
+  <a class="text-2xl icon-btn !border-none !hover:text-gray" href="https://fri.uni-lj.si/sl/o-fakulteti/osebje/nejc-ilc"><mdi-web-box/></a>
+  <a class="text-2xl icon-btn !border-none !hover:text-gray" href="mailto:nejc.ilc@fri.uni-lj.si?subject=[OP-FKKT] "><mdi-email/></a>
   <a href="https://github.com/laspp/OP/tree/master/predavanja" target="_blank"
     alt="OP GitHub repository"
-    class="text-2xl icon-btn opacity-70 !border-none !hover:text-gray">
+    class="text-2xl icon-btn !border-none !hover:text-gray">
     <carbon-logo-github />
   </a>
 </div>
