@@ -104,26 +104,17 @@ transition: slide-left
 ---
 layout: image
 image: '/01/img/JasonAllen-award-ai.webp'
+caption: 'Jason Allen: <i>Théâtre D’opéra Spatial</i>. Prvo mesto med digitalnimi deli na Colorado State Fair. Sliko je izdelala umetna inteligenca (Midjourney)'
 transition: slide-left
 ---
-<div class="abs-bl bg-black bg-opacity-70 text-sm m-5 px-5 text-shadow-xl">
-
-Jason Allen: *Théâtre D’opéra Spatial* - 1. mesto med digitalnimi deli na *Colorado State Fair*. Sliko je izdelala umetna inteligenca (Midjourney)
-
-</div>
 
 
 ---
 layout: image
 image: '/01/img/stable-diffusion-superman-batman-2.jpg'
+caption: 'Na <a href="https://stablediffusionweb.com" target="_blank">stablediffusionweb.com</a> smo vnesli opis: <i>clear portrait of a superhero concept between spiderman and batman, background hyper detailed, character concept, full body, dynamic pose, intricate, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration</i>.'
 transition: slide-left
 ---
-<div class="abs-bl bg-black bg-opacity-70 text-sm m-5 px-5 text-shadow-xl">
-
-Na [stablediffusionweb.com](https://stablediffusionweb.com/) smo vnesli opis: *clear portrait of a superhero concept between spiderman and batman, background hyper detailed, character concept, full body, dynamic pose, intricate, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration*.
-
-</div>
-
 
 ---
 layout: image
@@ -197,7 +188,10 @@ Zgodba o Spletnem stražarju
 ---
 layout: image-right
 image: './01/img/curtain-theatre.jpg'
+caption: 'Fotografija: Gwen King'
+url: 'https://unsplash.com/photos/m3th3rIQ9-w'
 ---
+
 
 # Na koncu bi rad, da ...
 
@@ -233,16 +227,15 @@ image: './01/img/curtain-theatre.jpg'
 
 </div>
 
-<div class="footnotes">
-Fotografija: <a href="https://unsplash.com/@gwenking?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Gwen King</a> na <a href="https://unsplash.com/photos/m3th3rIQ9-w?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-</div>
-
-
 ---
 layout: image-left
 image: '/01/img/cooking.jpg'
+caption: 'Fotografija: Mae Mu'
+url: 'https://unsplash.com/photos/rgRbqFweGF0'
 ---
+
 # Kaj je to programiranje?
+
 
 <div v-click>
 
@@ -267,10 +260,6 @@ Dragocena veščina: <Mark>algoritmično razmišljanje</Mark>. Razbijanje proble
 
 > "Elektronska naprava za reševanje nalog na osnovi vloženega programa." (SSKJ)
 
-</div>
-
-<div class="footnotes">
-Fotografija: <a href="https://unsplash.com/@picoftasty?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mae Mu</a> on <a href="https://unsplash.com/s/photos/cooking?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 </div>
 
 ---
@@ -301,7 +290,7 @@ E --> C
 ### ... je lepše z OP 😀
 &nbsp;
 
-![Lego Mindstorms EV3](/01/img/EV3.jpg)
+<Image width="380" alt="LEGO Mindstorms EV3" src="/01/img/EV3.jpg" caption="Slika: LEGO Mindstorms EV3" url="https://makecode.mindstorms.com/getting-started/use"/>
 
 </div>
 </div>
@@ -516,11 +505,8 @@ Pravimo tudi, da napišemo <Mark>izvorno kodo</Mark> programa.
 
 <div v-click>
 
-![Najbolj popularni programski jeziki](/01/img/top-programming-languages.jpg)
+<Image alt="Najbolj popularni programski jeziki" src="/01/img/top-programming-languages.jpg" caption="Najbolj popularni programski jeziki. Avtor: Mike Shannon." url="https://gowithcode.com/top-programming-languages"/>
 
-<div class="footnotes-rel">
-Slika: <a href="https://gowithcode.com/about">Mike Shannon</a> na <a href="https://gowithcode.com/top-programming-languages">Go with code</a>
-</div>
 </div>
 
 </div>
@@ -599,11 +585,7 @@ style C fill:#fbb,stroke:#555,stroke-width:4px
 
 Ali je morda to bolj spirala?
 
-<img class="pr-20" src="/01/img/nicolas-hoizey-spiral-unsplash.jpg" alt="Spiralne stopnice" />
-
-<div class="footnotes-rel">
-Fotografija: <a href="https://unsplash.com/@nhoizey?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nicolas Hoizey</a> na <a href="https://unsplash.com/s/photos/spiral-staircase?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-</div>
+<Image width="350" alt="Spiralne stopnice" src="/01/img/nicolas-hoizey-spiral-unsplash.jpg" caption="Fotografija: Nicolas Hoizey" url="https://unsplash.com/photos/VU8HxMAP79U"/>
 
 </div>
 </div>
@@ -642,6 +624,8 @@ To je bil naš recept:
 ---
 layout: image-right
 image: /01/img/Jusepe_de_Ribera-Euclid.jpg
+caption: 'Jusepe de Ribera: Euclid'
+url: 'https://commons.wikimedia.org/wiki/File:Jusepe_de_Ribera_-_Euclid_-_2001.26_-_J._Paul_Getty_Museum.jpg'
 ---
 
 # Star problem
@@ -664,10 +648,6 @@ GCD(75, 25) = GCD(50, 25) = GCD(25, 25) = 25
 ```
 
 Imamo rezultat: $25$!
-
-<div class="footnotes">
-Slika: <a href="https://commons.wikimedia.org/wiki/File:Jusepe_de_Ribera_-_Euclid_-_2001.26_-_J._Paul_Getty_Museum.jpg">Jusepe de Ribera</a>: Euclid
-</div>
 
 ---
 
@@ -694,12 +674,7 @@ Dokler sta obe števili različni, odštevaj manjše število od večjega.
 
 <div>
 
-<img width="500" alt="P. Oxy. I 29" src="/01/img/Euclid-Elements.jpg">
-
-<div class="footnotes-rel">
-
-<a href="https://commons.wikimedia.org/wiki/File:P._Oxy._I_29.jpg">Euclid</a>, Public domain, via Wikimedia Commons
-</div>
+<Image width="500" alt="Papirus - Evklid - Elementi." src="/01/img/Euclid-Elements.jpg" caption="Papirus z delčkom Evklidovih Elementov." url="https://commons.wikimedia.org/wiki/File:P._Oxy._I_29.jpg"/>
 
 </div>
 
@@ -815,17 +790,13 @@ print(A)
 ---
 layout: image
 image: '/01/img/sebastian-staines-skiing-unsplash.jpg'
-class: 'text-red'
+caption: 'Fotografija: Sebastian Staines'
+url: 'https://unsplash.com/photos/xZIFEPtRsRI'
 ---
 
 # "Oči, jaz znam smučat!"
 
 pravi moj sin, ko gleda prenos slaloma po TV ...
-
-<div class="abs-bl bg-black bg-opacity-70 text-sm m-5 px-5 text-shadow-xl">
-Fotografija: <a href="https://unsplash.com/ja/@seabas?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sebastian Staines</a> na <a href="https://unsplash.com/s/photos/skiing?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-
-</div>
 
 <style>
 h1, p {
