@@ -1,4 +1,4 @@
-# OP
-Predmet Osnove programiranja (FKKT, izbirni, letni semester)
+# Osnove programiranja
+Predmet na FKKT, izbirni, letni semester
 
 [Predavanja](./predavanja/)
