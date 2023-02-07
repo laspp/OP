@@ -1,6 +1,6 @@
 # Osnove programiranja
 
-Narejeno s [Slidev](https://sli.dev/).
+Gradiva za predavanja (predstavitve, izvorna koda, ...).
 
 ## Namestitev in zagon predstavitev
 
@@ -10,4 +10,8 @@ Narejeno s [Slidev](https://sli.dev/).
 
 ## Poglavja
 
-- [01-osnove.md](./01-osnove.md)
+### [01: Osnove osnov programiranja](./OP-01-Osnove.md) [[pdf](./OP-01-Osnove.pdf)] [[koda](./public/01/code)]
+
+
+---
+*Narejeno s [Slidev](https://sli.dev/).*
