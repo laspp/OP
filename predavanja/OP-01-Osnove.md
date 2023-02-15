@@ -25,8 +25,14 @@ Nejc Ilc
 
 <div class="abs-b m-6 flex gap-1 items-center justify-end text-red-600 opacity-100">
   <div><mdi-map-marker/> R2.41</div>
-  <a class="text-2xl icon-btn !border-none !hover:text-gray" href="https://fri.uni-lj.si/sl/o-fakulteti/osebje/nejc-ilc"><mdi-web-box/></a>
-  <a class="text-2xl icon-btn !border-none !hover:text-gray" href="mailto:nejc.ilc@fri.uni-lj.si?subject=[OP-FKKT] "><mdi-email/></a>
+  <a class="text-2xl icon-btn !border-none !hover:text-gray"
+  href="https://fri.uni-lj.si/sl/o-fakulteti/osebje/nejc-ilc">
+    <mdi-web-box/>
+  </a>
+  <a class="text-2xl icon-btn !border-none !hover:text-gray"
+  href="mailto:nejc.ilc@fri.uni-lj.si?subject=[OP-FKKT] ">
+    <mdi-email/>
+  </a>
   <a href="https://github.com/laspp/OP/tree/master/predavanja" target="_blank"
     alt="OP GitHub repository"
     class="text-2xl icon-btn !border-none !hover:text-gray">
@@ -70,11 +76,13 @@ Miha Moškon:
 -->
 
 ---
+
 layout: fact
 transition: slide-left
 ---
 
-# Zakaj 
+# Zakaj
+
 se ukvarjati z računalništvom?
 
 <div v-click>Digitalna revolucija</div>
@@ -796,7 +804,7 @@ url: 'https://unsplash.com/photos/xZIFEPtRsRI'
 
 # "Oči, jaz znam smučat!"
 
-pravi moj sin, ko gleda prenos slaloma po TV ...
+pravi moj štiriletni sin, ko gleda prenos slaloma po TV ...
 
 <style>
 h1, p {

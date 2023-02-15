@@ -1,0 +1,16 @@
+:not(pre) > code::before, :not(pre) > code::after {
+    content: none;
+}
+:not(pre) > code {
+    padding: 0.2em;
+    border-width: 0px;
+    border-color: rgb(156, 163, 175, 0.2);
+}
+
+.error > .slidev-code-wrapper > pre > .slidev-code {
+    background: rgba(226, 122, 122, 0.301) !important;
+}
+
+.error > pre > .slidev-code {
+    background: rgba(226, 122, 122, 0.301) !important;
+}
