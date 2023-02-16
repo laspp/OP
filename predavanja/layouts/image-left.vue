@@ -23,8 +23,11 @@ const style = computed(() => handleBackground(props.image));
 
 		<div class="grid grid-cols-2 w-full h-full">			
 			<div class="slidev-layout w-full h-full" :style="style">
-                <div v-if="props.caption" class="fixed bottom-0 left-0 bg-black bg-opacity-50 text-sm m-2 py-1 px-3 text-shadow-xl">
-					<a v-if="props.url" :href="props.url" target="_blank" class="text-lg icon-btn opacity-70 !border-none !hover:text-gray"><mdi-open-in-new/></a> <span v-html="props.caption"></span> 
+                <div v-if="props.caption" class="absolute bottom-0 left-0 bg-black bg-opacity-50 text-sm m-2 py-1 px-3 text-shadow-xl">
+					<!-- <a v-if="props.url" :href="props.url" target="_blank" class="text-lg icon-btn opacity-70 !border-none !hover:text-gray"><mdi-open-in-new/></a> <span v-html="props.caption"></span>  -->
+					<span v-html="props.caption"></span>
+      				<span v-if="props.url">&nbsp;</span>
+					<a v-if="props.url" :href="props.url" target="_blank" class="text-xs opacity-70">[vir]</a>
 				</div>
             </div>
 			<div class="slidev-layout default mt-4 h-auto" :class="props.class">

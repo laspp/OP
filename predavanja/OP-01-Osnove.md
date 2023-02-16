@@ -1,7 +1,7 @@
 ---
 title: Osnove osnov programiranja
 exportFilename: 'OP-01-Osnove.pdf'
-download: true
+download: false
 info: Predavanja pri predmetu Osnove programiranja
 theme: default
 background: false
@@ -9,10 +9,21 @@ class: text-center
 highlighter: shiki
 lineNumbers: false
 drawings:
+  enabled: true
   persist: false
+  presenterOnly: true
+  syncAll: false
 transition: fade-out
 css: unocss
+favicon: 'favicon.png'
 layout: cover
+fonts:
+  # basically the text
+  sans: 'Roboto'
+  # use with `font-serif` css class from windicss
+  serif: 'Roboto Slab'
+  # for code blocks, inline code, etc.
+  mono: 'Fira Code'
 ---
 
 <ProgressBar bgcolor="#e11d48" completed="1" total="13"/>
@@ -49,11 +60,14 @@ Nejc Ilc
 2. Robot OP - pomočnik pri učenju programiranja
 -->
 
+
 ---
 
 # Gradiva
 
-- zapiski - vaši lastni 😁
+## Zapiski
+
+- vaši lastni 😁
 - prosojnice s predavanj in vaj
 
 ## Spletna učilnica
@@ -76,7 +90,6 @@ Miha Moškon:
 -->
 
 ---
-
 layout: fact
 transition: slide-left
 ---
@@ -99,19 +112,19 @@ se ukvarjati z računalništvom?
 
 ---
 layout: image
-image: '/01/img/chatGPT-zgodba-1.png'
+image: '/img/chatGPT-zgodba-1.png'
 transition: slide-up
 ---
 
 ---
 layout: image
-image: '/01/img/chatGPT-zgodba-2.png'
+image: '/img/chatGPT-zgodba-2.png'
 transition: slide-left
 ---
 
 ---
 layout: image
-image: '/01/img/JasonAllen-award-ai.webp'
+image: '/img/JasonAllen-award-ai.webp'
 caption: 'Jason Allen: <i>Théâtre D’opéra Spatial</i>. Prvo mesto med digitalnimi deli na Colorado State Fair. Sliko je izdelala umetna inteligenca (Midjourney)'
 transition: slide-left
 ---
@@ -119,14 +132,14 @@ transition: slide-left
 
 ---
 layout: image
-image: '/01/img/stable-diffusion-superman-batman-2.jpg'
+image: '/img/stable-diffusion-superman-batman-2.jpg'
 caption: 'Na <a href="https://stablediffusionweb.com" target="_blank">stablediffusionweb.com</a> smo vnesli opis: <i>clear portrait of a superhero concept between spiderman and batman, background hyper detailed, character concept, full body, dynamic pose, intricate, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration</i>.'
 transition: slide-left
 ---
 
 ---
 layout: image
-image: '/01/img/WSE2-vs-A100.png'
+image: '/img/WSE2-vs-A100.png'
 transition: slide-left
 ---
 
@@ -195,7 +208,7 @@ Zgodba o Spletnem stražarju
 -->
 ---
 layout: image-right
-image: './01/img/curtain-theatre.jpg'
+image: './img/curtain-theatre.jpg'
 caption: 'Fotografija: Gwen King'
 url: 'https://unsplash.com/photos/m3th3rIQ9-w'
 ---
@@ -237,12 +250,12 @@ url: 'https://unsplash.com/photos/m3th3rIQ9-w'
 
 ---
 layout: image-left
-image: '/01/img/cooking.jpg'
+image: '/img/cooking.jpg'
 caption: 'Fotografija: Mae Mu'
 url: 'https://unsplash.com/photos/rgRbqFweGF0'
 ---
 
-# Kaj je to programiranje?
+# Kaj je programiranje?
 
 
 <div v-click>
@@ -295,10 +308,10 @@ E --> C
 
 <div v-click>
 
-### ... je lepše z OP 😀
-&nbsp;
+ ... je lepše z OP 😀
+<br/>
 
-<Image width="380" alt="LEGO Mindstorms EV3" src="/01/img/EV3.jpg" caption="Slika: LEGO Mindstorms EV3" url="https://makecode.mindstorms.com/getting-started/use"/>
+<Image width="380" alt="LEGO Mindstorms EV3" src="/img/EV3.jpg" caption="Slika: LEGO Mindstorms EV3" url="https://makecode.mindstorms.com/getting-started/use"/>
 
 </div>
 </div>
@@ -513,7 +526,7 @@ Pravimo tudi, da napišemo <Mark>izvorno kodo</Mark> programa.
 
 <div v-click>
 
-<Image alt="Najbolj popularni programski jeziki" src="/01/img/top-programming-languages.jpg" caption="Najbolj popularni programski jeziki. Avtor: Mike Shannon." url="https://gowithcode.com/top-programming-languages"/>
+<Image alt="Najbolj popularni programski jeziki" src="/img/top-programming-languages.jpg" caption="Najbolj popularni programski jeziki. Avtor: Mike Shannon." url="https://gowithcode.com/top-programming-languages"/>
 
 </div>
 
@@ -546,7 +559,7 @@ style E fill:#fbb,stroke:#555,stroke-width:4px
 
 <div v-click>
 
-![Lego Mindstorms EV3](/01/img/EV3.jpg)
+![Lego Mindstorms EV3](/img/EV3.jpg)
 
 </div>
 
@@ -593,7 +606,7 @@ style C fill:#fbb,stroke:#555,stroke-width:4px
 
 Ali je morda to bolj spirala?
 
-<Image width="350" alt="Spiralne stopnice" src="/01/img/nicolas-hoizey-spiral-unsplash.jpg" caption="Fotografija: Nicolas Hoizey" url="https://unsplash.com/photos/VU8HxMAP79U"/>
+<Image width="350" alt="Spiralne stopnice" src="/img/nicolas-hoizey-spiral-unsplash.jpg" caption="Fotografija: Nicolas Hoizey" url="https://unsplash.com/photos/VU8HxMAP79U"/>
 
 </div>
 </div>
@@ -610,7 +623,7 @@ Uporabimo programski jezik [Scratch](https://scratch.mit.edu/) v razvojnem okolj
 
 <div>
 
-<img width="320" class="" src="/01/img/LEGO-EV3-OP-naprej-trans.png" alt="LEGO Mindstorms EV3 program" />
+<img width="320" class="" src="/img/LEGO-EV3-OP-naprej-trans.png" alt="LEGO Mindstorms EV3 program" />
 
 </div><div>
 
@@ -631,7 +644,7 @@ To je bil naš recept:
 
 ---
 layout: image-right
-image: /01/img/Jusepe_de_Ribera-Euclid.jpg
+image: '/img/Jusepe_de_Ribera-Euclid.jpg'
 caption: 'Jusepe de Ribera: Euclid'
 url: 'https://commons.wikimedia.org/wiki/File:Jusepe_de_Ribera_-_Euclid_-_2001.26_-_J._Paul_Getty_Museum.jpg'
 ---
@@ -682,7 +695,7 @@ Dokler sta obe števili različni, odštevaj manjše število od večjega.
 
 <div>
 
-<Image width="500" alt="Papirus - Evklid - Elementi." src="/01/img/Euclid-Elements.jpg" caption="Papirus z delčkom Evklidovih Elementov." url="https://commons.wikimedia.org/wiki/File:P._Oxy._I_29.jpg"/>
+<Image width="500" alt="Papirus - Evklid - Elementi." src="/img/Euclid-Elements.jpg" caption="Papirus z delčkom Evklidovih Elementov." url="https://commons.wikimedia.org/wiki/File:P._Oxy._I_29.jpg"/>
 
 </div>
 
@@ -734,7 +747,7 @@ Programski jezik Scratch, <a href="https://scratch.mit.edu/projects/799365193" t
 <div>
 
 <a href="https://scratch.mit.edu/projects/799365193" target="_blang">
-<img width="260" alt="Scratch: Evklidov algoritem" src="/01/img/Evklidov-algoritem-Scratch.png">
+<img width="260" alt="Scratch: Evklidov algoritem" src="/img/Evklidov-algoritem-Scratch.png">
 </a>
 
 </div>
@@ -797,7 +810,7 @@ print(A)
 
 ---
 layout: image
-image: '/01/img/sebastian-staines-skiing-unsplash.jpg'
+image: '/img/sebastian-staines-skiing-unsplash.jpg'
 caption: 'Fotografija: Sebastian Staines'
 url: 'https://unsplash.com/photos/xZIFEPtRsRI'
 ---

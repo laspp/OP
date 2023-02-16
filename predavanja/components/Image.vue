@@ -27,6 +27,8 @@ const image = ref(props.src)
     <img :width="props.width" :alt="props.alt" :src="props.src"/>
   </div>
   <div v-if="props.caption" class="rel-b m-2 pl-2 text-sm opacity-70">
-      <a v-if="props.url" :href="props.url" target="_blank" class="text-lg icon-btn opacity-70 !border-none !hover:text-gray"><mdi-open-in-new/></a> <span v-html="props.caption"></span> 
+      <span v-html="props.caption"></span>
+      <span v-if="props.url">&nbsp;</span>
+			<a v-if="props.url" :href="props.url" target="_blank" class="text-xs opacity-70">[vir]</a>
   </div>
 </template>

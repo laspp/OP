@@ -17,3 +17,12 @@
 .solution {
     @apply text-xs text-gray-400;
 }
+
+.slidev-layout h1, h2, h3{
+    @apply font-serif;
+}
+
+.slidev-layout h2 {
+    font-size: 1.7rem;
+    line-height: 2.25rem;
+}
