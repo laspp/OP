@@ -57,7 +57,7 @@ Nejc Ilc
 - študenti, vsak pove svoje ime in priimek, od kod prihaja, enega od hobijev. 
 - Vsak ima 10 sekund.
 
-2. Robot OP - pomočnik pri učenju programiranja
+2. Presenečenje: Robot OP - pomočnik pri učenju programiranja
 -->
 
 
