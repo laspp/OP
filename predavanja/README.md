@@ -10,8 +10,7 @@ Gradiva za predavanja (predstavitve, izvorna koda, ...).
 
 ## Poglavja
 
-### [01: Osnove osnov programiranja](./OP-01-Osnove.md) [[pdf](./OP-01-Osnove.pdf)] [[koda](./public/01/code)]
-
+### [01: Osnove osnov programiranja](./OP-01-Osnove.md) [[pdf](./OP-01-Osnove.pdf)] [[koda](./assets/01/code)]
 
 ---
 *Narejeno s [Slidev](https://sli.dev/).*
