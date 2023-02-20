@@ -1,6 +1,6 @@
 ---
 title: Osnove osnov programiranja
-exportFilename: 'OP-01-Osnove.pdf'
+exportFilename: OP-01-Osnove.pdf
 download: false
 info: Predavanja pri predmetu Osnove programiranja
 theme: default
@@ -15,16 +15,23 @@ drawings:
   syncAll: false
 transition: fade-out
 css: unocss
-favicon: 'favicon.png'
+favicon: favicon.png
 layout: cover
 fonts:
-  # basically the text
-  sans: 'Roboto'
-  # use with `font-serif` css class from windicss
-  serif: 'Roboto Slab'
-  # for code blocks, inline code, etc.
-  mono: 'Fira Code'
+  sans: Roboto
+  serif: Roboto Slab
+  mono: Fira Code
 ---
+
+<!-- 
+1. Spremeni `vite.config.ts`, da publicDir kaže na ustrezno mapo gradiva za predavanje 
+    publicDir: './assets/01'
+2. npx slidev OP-01-Osnove.md
+3. npx slidev --remote=geslo OP-01-Osnove.md 
+  če si presenter, potem uporabi url, ki ima notri ?password=geslo, da te ne gnjavi za vpis gesla
+4. npx slidev build --out dist/01 OP-01-Osnove.md
+5. npx slidev export OP-01-Osnove.md
+-->
 
 <ProgressBar bgcolor="#e11d48" completed="1" total="13"/>
 
@@ -51,15 +58,14 @@ Nejc Ilc
   </a>
 </div>
 
-<!--
+<!-- 
 1. Predstavitev
 - predstavim se sam (družina, izobrazba, hobiji, zakaj predavam ta predmet)
 - študenti, vsak pove svoje ime in priimek, od kod prihaja, enega od hobijev. 
 - Vsak ima 10 sekund.
 
-2. Presenečenje: Robot OP - pomočnik pri učenju programiranja
+2. Presenečenje: pripelje se robotek OP (ou-pi) pod škatlo. Ko prvič pritisneš BTN-CENTER, pove »Hello«, ko drugič zapiska Ou-Pi, nato zaspi. Predstavim ga kot našega pomočnika pri učenju programiranja
 -->
-
 
 ---
 
@@ -129,7 +135,6 @@ caption: 'Jason Allen: <i>Théâtre D’opéra Spatial</i>. Prvo mesto med digit
 transition: slide-left
 ---
 
-
 ---
 layout: image
 image: '/img/stable-diffusion-superman-batman-2.jpg'
@@ -155,6 +160,7 @@ se učiti programiranja?
 - Mentimeter: Kdo zna napisati program?
   - pričakujem, da vsi odgovorijo pozitivno
   - ker ne: grem stavit, da znate napisati postopek za umivanje zob
+- Kviz: 5 vprašanj o računalništvu
 -->
 
 ---
@@ -163,7 +169,7 @@ se učiti programiranja?
 # Tri vrline dobrega programerja [^1]
 ... ali morda "anti-vrline"?
 
-<div class="grid grid-cols-3 gap-x-4"> 
+<div class="grid grid-cols-3 gap-x-4">
 <div>
 <div v-click>
 
@@ -213,8 +219,7 @@ caption: 'Fotografija: Gwen King'
 url: 'https://unsplash.com/photos/m3th3rIQ9-w'
 ---
 
-
-# Na koncu bi rad, da ...
+# Na koncu bi rad, da
 
 <div v-click>
 
@@ -256,7 +261,6 @@ url: 'https://unsplash.com/photos/rgRbqFweGF0'
 ---
 
 # Kaj je programiranje?
-
 
 <div v-click>
 
@@ -320,7 +324,6 @@ E --> C
 ---
 transition: fade
 ---
-
 
 # Življenje programerja: imamo problem
 
@@ -512,13 +515,11 @@ style D fill:#fbb,stroke:#555,stroke-width:4px
 
 Kako računalniku povedati, kaj naj naredi?
 
-*(po možnosti na človeku prijazen način)*
-
 </div>
 
 <div v-click>
 
-&rarr; Tako, da "govorimo" <Mark>programski jezik</Mark>.
+&rarr; Tako, da "govorimo" <Mark>programski jezik</Mark>. Po možnosti takega, ki je človeku prijazen.
 
 Pravimo tudi, da napišemo <Mark>izvorno kodo</Mark> programa.
 
@@ -538,7 +539,6 @@ transition: fade
 ---
 
 # Življenje programerja: ali deluje?
-
 
 <div class="grid grid-cols-2 gap-x-4">
 
@@ -585,7 +585,6 @@ transition: fade
 ---
 
 # Življenje programerja: se vrti v krogu
-
 
 <div class="grid grid-cols-2 gap-x-4">
 
@@ -701,7 +700,6 @@ Dokler sta obe števili različni, odštevaj manjše število od večjega.
 
 </div>
 
-
 ---
 
 # Evklidov algoritem: narišimo
@@ -810,7 +808,7 @@ print(A)
 
 ---
 layout: image
-image: '/img/sebastian-staines-skiing-unsplash.jpg'
+image: /img/sebastian-staines-skiing-unsplash.jpg
 caption: 'Fotografija: Sebastian Staines'
 url: 'https://unsplash.com/photos/xZIFEPtRsRI'
 ---

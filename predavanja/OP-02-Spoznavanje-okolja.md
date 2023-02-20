@@ -1,25 +1,46 @@
 ---
 title: Spoznavanje okolja
 exportFilename: OP-02-Spoznavanje-okolja.pdf
-download: true
+download: false
 info: Predavanja pri predmetu Osnove programiranja
 theme: default
+themeConfig:
+  primary: #e11d48
 background: false
 class: text-center
 highlighter: shiki
 lineNumbers: false
 drawings:
+  enabled: true
   persist: false
+  presenterOnly: true
+  syncAll: false
 transition: fade-out
 css: unocss
+favicon: favicon.png
 layout: cover
+fonts:
+  sans: Roboto
+  serif: Roboto Slab
+  mono: Fira Code
 ---
+
+<!-- 
+1. Spremeni `vite.config.ts`, da publicDir kaže na ustrezno mapo gradiva za predavanje 
+    publicDir: './assets/02'
+   Popravi ProgressBar completed na ustrezno številko predavanja
+2. npx slidev OP-02-Spoznavanje-okolja.md
+3. npx slidev --remote=geslo OP-02-Spoznavanje-okolja.md 
+  če si presenter, potem uporabi url, ki ima notri ?password=geslo, da te ne gnjavi za vpis gesla
+4. npx slidev build --out dist/02 OP-02-Spoznavanje-okolja.md
+5. npx slidev export OP-02-Spoznavanje-okolja.md
+-->
 
 <ProgressBar bgcolor="#e11d48" completed="2" total="13"/>
 
 # Spoznavanje okolja
 
-Osnove programiranjas
+Osnove programiranja
 
 Nejc Ilc
 
@@ -52,26 +73,30 @@ Osnove programiranja bomo odkrivali z visokonivojskim jezikom <mdi-language-pyth
 
 [https://www.python.org](https://www.python.org)
 
+>"Si moram nanestiti Python?"
+
+Ni nujno, lahko pa. Uporabljali bomo namreč orodje, ki ima Python že vgrajen.
+
 ## Zakaj ravno Python?
 
 - Python je eden najbolj priljubljenih programskih jezikov
-- Enostaven za začetnike,  a hkrati dovolj močan za stare mačke
-- Koda je pregledna,  čista,  berljiva → zelo blizu psevdo kodi
+- Enostaven za začetnike, a hkrati dovolj močan za stare mačke
+- Koda je pregledna, čista, berljiva → zelo blizu psevdo kodi
 - "Baterije so priložene" → obširna knjižnica razpoložljivih modulov
 - Je kdo omenil kemijo? Python se lepo razume z orodji računalniške kemije
-  ([PyMOL](https://pymol.org/),  [Maestro](https://www.schrodinger.com/products/maestro),  [RDkit](https://www.rdkit.org/))
+  ([PyMOL](https://pymol.org/), [Maestro](https://www.schrodinger.com/products/maestro), [RDkit](https://www.rdkit.org/))
 
 ---
 
 # Prvi zmenek
 
-Python je interaktivni <Mark>tolmač</Mark> → ukaze sproti tolmači v jezik računalnika,  tj. <Mark>strojni</Mark> jezik
+Python je interaktivni <Mark>tolmač</Mark> → ukaze sproti tolmači v jezik računalnika, tj. <Mark>strojni</Mark> jezik
 
 ## Zagon ukaznega poziva na Windows
 
-Pritisnite tipko <kbd><mdi-microsoft-windows/></kbd>,  vtipkajte `cmd` in pritisnite tipko <kbd>enter</kbd>.
+Pritisnite tipko <kbd><mdi-microsoft-windows/></kbd>, vtipkajte `cmd` in pritisnite tipko <kbd>enter</kbd>.
 
-Nato vpišite `python` in pritisnite <kbd>enter</kbd>.
+Nato vpišite `python` in pritisnite <kbd>enter</kbd>. To bo seveda delovalo le, če imate nameščen Python.
 
 Začnimo pogovor v slogu osnovnošolske matematike:
 
@@ -84,12 +109,12 @@ Začnimo pogovor v slogu osnovnošolske matematike:
 6.28
 ```
 
-Označba `>>>` predstavlja naš vnos. Ko pritisnemo <kbd>enter</kbd>,  se v vrstici nižje izpiše odgovor.
+Označba `>>>` predstavlja naš vnos. Ko pritisnemo <kbd>enter</kbd>, se v vrstici nižje izpiše odgovor.
 
 ---
 
 # Osnovni operatorji
-Matematični operatorji,  ostale pogledamo pozneje
+Matematični operatorji, ostale pogledamo pozneje
 
 | **operator** | **opis** | **primer**|
 | :----------: | :------- | --------- |
@@ -117,19 +142,19 @@ Primeri: `0`, `1`, `42`, `-273`, `123456789123456789000000000000000000001`
 ## `float`
 necelo število (ang. *floating point number*). Pozor: decimalna pika namesto "naše" decimalne vejice.
 
-Primeri: `0.0`,  `-42.33`,  `3.141592653589793`
+Primeri: `0.0`, `-42.33`, `3.141592653589793`
 
 ---
 
 # Podatkovni tipi: nadaljevanje
 
-## `str` 
-niz,  zaporedje znakov (ang. *string*). Niz zapišemo v enojne `'`,  dvojne `"` ali trojne `'''` narekovaje.
+## `str`
+niz, zaporedje znakov (ang. *string*). Niz zapišemo v enojne `'`, dvojne `"` ali trojne `'''` narekovaje.
 
 <div class="grid grid-cols-2 gap-x-4">
 <div>
 
-`'Živjo,  svet!'`
+`'Živjo, svet!'`
 
 `"Moj program je kot 🚀"`
 
@@ -153,13 +178,14 @@ niz,  zaporedje znakov (ang. *string*). Niz zapišemo v enojne `'`,  dvojne `"` 
 <br/>
 
 ## `bool`
-logična vrednost (ang. *boolean*),  lahko je bodisi *resnično* (`True`) bodisi *neresnično* (`False`).
-O tem podatkovnem tipu bomo precej govorili čez teden dni.
+logična vrednost (ang. *boolean*), lahko je bodisi *resnično* (`True`) bodisi *neresnično* (`False`).
+O tem podatkovnem tipu bomo precej govorili čez teden dni. Oplazili pa smo ga tudi pretekli teden,
+ko smo govorili o Evklidovem algoritmu in odločitvah ter zankah.
 
 ---
 
 # Podatkovni tipi: igranje
-Kateri podatkovni tip dobimo,  če ...
+Kateri podatkovni tip dobimo, če ...
 
 <div class="grid grid-cols-2 gap-x-4">
 
@@ -211,41 +237,40 @@ Kateri podatkovni tip dobimo,  če ...
 
 ---
 
-# Kdor dela,  greši
-
+# Kdor dela, greši
 
 <div class="error">
 
 ```
 >>> 6 / 0
 Traceback (most recent call last):
-  File "<stdin>",  line 1,  in <module>
+  File "<stdin>", line 1, in <module>
 ZeroDivisionError: division by zero
 ```
 
 </div>
 
-Hm,  delili smo z 0,  ups. Tega ne prenese niti papir.
+Hm, delili smo z 0, ups. Tega ne prenese niti papir.
 
 <div class="error">
 
 ```
 >>> 'Ana' * 'Jaka'
 Traceback (most recent call last):
-  File "<stdin>",  line 1,  in <module>
+  File "<stdin>", line 1, in <module>
 TypeError: can't multiply sequence by non-int of type 'str'
 ```
 
 </div>
 
-Nismo mislili takšnega razmnoževanja,  kajne?
+Nismo mislili takšnega razmnoževanja, kajne?
 
 <div class="error">
 
 ```
 >>> 'bla' * 3.14
 Traceback (most recent call last):
-  File "<stdin>",  line 1,  in <module>
+  File "<stdin>", line 1, in <module>
 TypeError: can't multiply sequence by non-int of type 'float'
 ```
 
@@ -255,71 +280,71 @@ Nize lahko razmnožujemo samo s celimi števili.
 
 ---
 
-# Kdor veliko dela,  še bolj greši
+# Kdor veliko dela, še bolj greši
 
 <div class="error">
 
 ```
 >>> 1 + '1'
 Traceback (most recent call last):
-  File "<stdin>",  line 1,  in <module>
+  File "<stdin>", line 1, in <module>
 TypeError: unsupported operand type(s) for +: 'int' and 'str'
 ```
 
 </div>
 
-`1` očitno ni isto kot `'1'`,  saj to že vemo. Števil in nizov ne znamo seštevati. Kaj pa naj bi dobili?
+`1` očitno ni isto kot `'1'`, saj to že vemo. Števil in nizov ne znamo seštevati. Kaj pa naj bi dobili?
 
 <div class="error">
 
 ```
 >>> '1' + 1
 Traceback (most recent call last):
-  File "<stdin>",  line 1,  in <module>
+  File "<stdin>", line 1, in <module>
 TypeError: can only concatenate str (not "int") to str
 ```
 
 </div>
 
-Podobno kot prej. Nizu `'1'` smo želeli prilepiti celo število `1`,  kar pa ne gre kar tako zlahka.
+Podobno kot prej. Nizu `'1'` smo želeli prilepiti celo število `1`, kar pa ne gre kar tako zlahka.
 
 <div class="error">
 
 ```
 >>> 'Dober' + dan
 Traceback (most recent call last):
-  File "<stdin>",  line 1,  in <module>
+  File "<stdin>", line 1, in <module>
 NameError: name 'dan' is not defined
 ```
 
 </div>
 
-Opa,  na nekaj smo pozabili. `dan` bi moral biti niz `'dan'`,  pri nas pa je kaj? "name"? Kaj je to?
+Opa, na nekaj smo pozabili. `dan` bi moral biti niz `'dan'`, pri nas pa je kaj? "name"? Kaj je to?
 
 ---
 
 # Funkcije
 Funkcije <Mark>sprejemajo argumente</Mark> in (lahko) <Mark>vračajo rezultat</Mark>.
 
-Klic funkcije: `ime_funkcije(argument_1,  argument_2,  ...)`
+Klic funkcije: `ime_funkcije(argument_1, argument_2, ...)`
 
-- funkcijo vedno kličemo z oklepaji,  tudi če ni ničesar v njih
+- funkcijo vedno kličemo z oklepaji, tudi če ni ničesar v njih
 - argumenti funkcije so navedeni v oklepajih in so ločeni z vejicami
 - nekaj primerov:
 
 | **funkcija** | **opis** | **primer**|
 | :----------: | :------- | --------- |
 | `abs`  | absolutna vrednost | `abs(-42)` → `42` |
-| `pow`  | potenca (podobno kot `**`) | `pow(2,  3)` → `8` |
-| `min`  | najmanjša vrednost | `min(2,  -42,  8)` → `-42` |
-| `max`  | največja vrednost | `min(2,  -42,  8)` → `8` |
-| `print`  | izpis v terminal | `print("Rezultat je",  42)` → `Rezultat je 42` |
+| `pow`  | potenca (podobno kot `**`) | `pow(2, 3)` → `8` |
+| `min`  | najmanjša vrednost | `min(2, -42, 8)` → `-42` |
+| `max`  | največja vrednost | `min(2, -42, 8)` → `8` |
+| `print`  | izpis v terminal | `print("Rezultat je", 42)` → `Rezultat je 42` |
 
 <!-- 
-Funkcija pow ima še tretji argument,  ki je modulus,  zato ni čisto enako kot **. pow in math.pow sta malo počasnejša od ** za majhna,  cela števila.
-Za računanje modula pa je pow neprimerno hitrejši,  primer:
+Funkcija pow ima še tretji argument, ki je modulus, zato ni čisto enako kot **. pow in math.pow sta malo počasnejša od ** za majhna, cela števila.
+Za računanje modula pa je pow neprimerno hitrejši, primer:
 2**1234567890 % 4
-pow(2,  1234567890,  4) 
+pow(2, 1234567890, 4) 
 -->
 
 ---
@@ -327,25 +352,25 @@ pow(2,  1234567890,  4)
 # Vgrajene funkcije
 Te funkcije so vedno dostopne. [Seznam za Python 3.11](href="https://docs.python.org/3/library/functions.html").
 
-<a href="https://docs.python.org/3/library/functions.html" target="_blank"><Image width="370" src="/02/img/python-built-in-functions.png" alt="Vgrajene funkcije"/></a>
+<a href="https://docs.python.org/3/library/functions.html" target="_blank"><Image width="370" src="/img/python-built-in-functions.png" alt="Vgrajene funkcije"/></a>
 
 ---
 
 # Izraz
-"Nekaj",  kar se da izračunati
+"Nekaj", kar se da izračunati
 
 ```python
 1 + 2
 1+5 * 8+1
 (1+5)*(8+1)
 2**3 % 7
-pow(2,  3,  7)
+pow(2, 3, 7)
 ((4-2.2)**2 + (-2-1)**2)**0.5
-max(min(0.5,  1),  0)
+max(min(0.5, 1), 0)
 'Rekel je: "' + 'bla'*3 + '".'
 ```
 
-Ko Pythonu podamo izraz in pritisnemo <kbd>enter</kbd>,  dobimo <Mark>rezultat</Mark> izraza.
+Ko Pythonovi ukazni vrstici podamo izraz in pritisnemo <kbd>enter</kbd>, dobimo <Mark>rezultat</Mark> izraza.
 
 ```python
 >>> 1+5 * 8+1
@@ -354,24 +379,23 @@ Ko Pythonu podamo izraz in pritisnemo <kbd>enter</kbd>,  dobimo <Mark>rezultat</
 
 Si lahko kam shranimo ta rezultat za mrzlo zimo?
 
-
 ---
 layout: fact
 ---
 # a = 42
 spremenljivka = izraz
 
-<Mark>Spremenljivka</Mark> je na levi,  na desni pa je <Mark>izraz</Mark>. Nikoli obratno!
+<Mark>Spremenljivka</Mark> je na levi, na desni pa je <Mark>izraz</Mark>. Nikoli obratno!
 
-Vmes je `=`,  ki je <Mark>operator prirejanja</Mark>. To ni navaden enačaj.
+Vmes je `=`, ki je <Mark>operator prirejanja</Mark>. To ni navaden enačaj.
 
-Ta rezultat se nato shrani v spomin,  ki ga lahko označimo,  poimenujemo.
+Ta rezultat se nato shrani v spomin, ki ga lahko označimo, poimenujemo.
 
 Namesto `=` bi si lahko prirejanje predstavili tudi s puščico ← :
 
 `a` ← `42`
 
-Namesto `42` bi seveda lahko napisali poljuben izraz,  recimo:
+Namesto `42` bi seveda lahko napisali poljuben izraz, recimo:
 
 `a = 1+5 * 8+1`
 
@@ -379,7 +403,7 @@ Pravkar smo spoznali <Mark>prireditveni stavek</Mark>.
 
 ---
 layout: image-right
-image: '/02/img/jesse-orrico-h6xNSDlgciU-unsplash.jpg'
+image: '/img/jesse-orrico-h6xNSDlgciU-unsplash.jpg'
 caption: 'Fotografija: Jesse Orrico'
 url: 'https://unsplash.com/photos/h6xNSDlgciU'
 ---
@@ -393,7 +417,7 @@ Spremenljivko (ang. *variable*) uporabimo za shranjevanje vrednosti izraza.
 >>> a = 42
 ```
 
-Ko želimo uporabiti to shranjeno vrednost,  preprosto rečemo `a`,  takole:
+Ko želimo uporabiti to shranjeno vrednost, preprosto rečemo `a`, takole:
 
 ```python
 >>> b = a + 1
@@ -401,14 +425,14 @@ Ko želimo uporabiti to shranjeno vrednost,  preprosto rečemo `a`,  takole:
 43
 ```
 
-Če naslovim spremenljivko,  ki ne obstaja:
+Če naslovim spremenljivko, ki ne obstaja:
 
 <div class="error">
 
 ```
 >>> c * 2
 Traceback (most recent call last):
-  File "<stdin>",  line 1,  in <module>
+  File "<stdin>", line 1, in <module>
 NameError: name 'c' is not defined
 ```
 
@@ -419,7 +443,7 @@ NameError: name 'c' is not defined
 # Spremenljivke in uganke
 
 <!-- TODO: to daj v kviz! -->
-<!-- Nagubajmo možgane in ne pozabimo,  da operator prirejanja `=` ni matematični enačaj. -->
+<!-- Nagubajmo možgane in ne pozabimo, da operator prirejanja `=` ni matematični enačaj. -->
 
 <div class="grid grid-cols-2 gap-x-4">
 
@@ -432,7 +456,7 @@ a = 15
 b = a + 2 * a
 ```
 
-<span class="solution">Rešitev: `b` postane 45. Prvi stavek spremenljivki `a` priredi celo število 15. Nato se obdela drugi stavek,  kjer se najprej izračuna izraz na desni strani: `15 + 2 * 15`,  ki ima rezultat 45. Zatem se ta rezultat priredi spremenljivki `b`.</span>
+<span class="solution">Rešitev: `b` postane 45. Prvi stavek spremenljivki `a` priredi celo število 15. Nato se obdela drugi stavek, kjer se najprej izračuna izraz na desni strani: `15 + 2 * 15`, ki ima rezultat 45. Zatem se ta rezultat priredi spremenljivki `b`.</span>
 
 Še ena:
 
@@ -441,7 +465,7 @@ a = 15
 b = a + 30 % a
 ```
 
-<span class="solution">Rešitev: `b` postane 15. Podobno kot prej,  `a` najprej postane 15. V izrazu `15 + 30 % 15` se najprej izračuna ostanek pri deljenju 30 s 15,  ki je 0,  nato se ta 0 prišteje k 15 in rezultat je 15,  ki se zatem priredi `b`ju.</span>
+<span class="solution">Rešitev: `b` postane 15. Podobno kot prej, `a` najprej postane 15. V izrazu `15 + 30 % 15` se najprej izračuna ostanek pri deljenju 30 s 15, ki je 0, nato se ta 0 prišteje k 15 in rezultat je 15, ki se zatem priredi `b`ju.</span>
 
 </div>
 <div>
@@ -454,7 +478,7 @@ b = a
 b = 'a'
 ```
 
-<span class="solution">Rešitev: `b` postane niz `'a'`. Najprej `a` postane 15. Nato `b`ju priredimo vrednost `a`ja,  torej 15. V tretjem stavku pa `b`ju priredimo vrednost `'a'`,  ki je mimogrede niz,  in s tem povozimo prejšnjo vrednost.</span>
+<span class="solution">Rešitev: `b` postane niz `'a'`. Najprej `a` postane 15. Nato `b`ju priredimo vrednost `a`ja, torej 15. V tretjem stavku pa `b`ju priredimo vrednost `'a'`, ki je mimogrede niz, in s tem povozimo prejšnjo vrednost.</span>
 
 Še zadnja! Koliko je `a` na koncu?
 
@@ -463,27 +487,27 @@ a = 15
 a = a + 1
 ```
 
-<span class="solution">Rešitev: Točno tako,  `a` postane 16. Najprej `a` postane 15. Nato v drugi vrstici izračunamo izraz na desni,  ki je `a + 1`,  torej `15 + 1`. Rezultat,  ki je seveda 16,  se nato vpiše v `a` in s tem povozi prejšnjo vrednost.</span>
+<span class="solution">Rešitev: Točno tako, `a` postane 16. Najprej `a` postane 15. Nato v drugi vrstici izračunamo izraz na desni, ki je `a + 1`, torej `15 + 1`. Rezultat, ki je seveda 16, se nato vpiše v `a` in s tem povozi prejšnjo vrednost.</span>
 
 </div>
 </div>
 
 <!-- 
-Opomba: v polja za kodo lahko sproti pišeš. Piši komentarje in jim povej,  kaj je to.
+Opomba: v polja za kodo lahko sproti pišeš. Piši komentarje in jim povej, kaj je to.
 -->
 
 ---
 
 # Imena spremenljivk
-Še nekaj bontona,  ko spremenljivkam dajemo imena
+Še nekaj bontona, ko spremenljivkam dajemo imena
 
 <div class="grid grid-cols-2 gap-x-4">
 
 <div>
 
-- vsebujejo lahko črke -- najbolje,  da samo črke angleške abecede
+- vsebujejo lahko črke -- najbolje, da samo črke angleške abecede
 
-- vsebujejo lahko številke,  vendar ne na prvem mestu
+- vsebujejo lahko številke, vendar ne na prvem mestu
   
   ~~`24kur = 'www.24kur.si'`~~
 
@@ -504,16 +528,16 @@ Opomba: v polja za kodo lahko sproti pišeš. Piši komentarje in jim povej,  ka
 
 - izogibamo se imenom vgrajenih funkcij
   
-  raje rečemo `maks = max(2,  3)`
+  raje rečemo `maks = max(2, 3)`
   
-  in ne `max = max(2,  3)`
+  in ne `max = max(2, 3)`
 
 - ne moremo uporabiti teh (rezerviranih) besed:
   
 <!-- 
   import keyword 
   list = keyword.kwlist 
-  print("No. of keywords present in current version :",  
+  print("No. of keywords present in current version :", 
   len(list)) 
   print(list)  
 -->
@@ -532,23 +556,23 @@ Napišimo že kakšen program
 
 > Danes bo delno oblačno s temperaturo do 30 stopinj.
 >
-> Oprostite,  pingvini,  za paniko,  mislil sem 30 °F.
+> Oprostite, pingvini, za paniko, mislil sem 30 °F.
 >
 > To je udobnih -1 °C.
 
-Napišimo program,  ki bo pretvarjal med °C in °F.
+Napišimo program, ki bo pretvarjal med °C in °F.
 
 ---
 
 # Prvi program: pretvornik med °C in °F
 
-Kakšen bo naš algoritem,  postopek? Kako ga bomo zakodirali?
+Kakšen bo naš algoritem, postopek? Kako ga bomo zakodirali?
 
-1. Imamo številčno vrednost $T_F$,  ki pomeni stopinje Fahrenheita
+1. Imamo številčno vrednost $T_F$, ki pomeni stopinje Fahrenheita.
 2. Uporabimo naslednjo enačbo za pretvorbo v stopinje Celzija:
 
 $$
-T_C = \frac{(T_F - 32)}{1{, }8}
+T_C = \frac{(T_F - 32)}{1{, }8}\quad .
 $$
 
 3. Izpišemo $T_C$.
@@ -565,12 +589,12 @@ Programsko kodo lahko napišemo v ukazno vrstico ...
 -1.1111111111111112
 ```
 
-... kar pa je precej neuporabno. Za ponovni izračun pri drugi vrednosti $T_F$,  bi morali ponoviti vse ukaze. Bolje?
+... kar pa je precej neuporabno. Za ponovni izračun pri drugi vrednosti $T_F$, bi morali ponoviti vse ukaze. Bolje?
 
 ---
 
 # Prvi program: napišimo ga
-Kam? Na papir? Dober začetek. Potem pa v Wordov dokument! Saj te prime,  pa te mine ...
+Kam? Na papir? Dober začetek. Potem pa v Wordov dokument! Saj te prime, pa te mine ...
 
 <div class="grid grid-cols-3 gap-x-4">
 
@@ -578,9 +602,9 @@ Kam? Na papir? Dober začetek. Potem pa v Wordov dokument! Saj te prime,  pa te 
 
 ## Asketsko
 
-![notepad](/02/img/prvi-notepad-cmd.png)
+![notepad](/img/prvi-notepad-cmd.png)
 
-Ups,  program ničesar ne izpiše. V zadnji vrstici dodajmo `print`.
+Ups, program ničesar ne izpiše. V zadnji vrstici dodajmo `print`.
 
 </div>
 
@@ -588,7 +612,7 @@ Ups,  program ničesar ne izpiše. V zadnji vrstici dodajmo `print`.
 
 ## Za silo
 
-![notepad](/02/img/prvi-IDLE.png)
+![notepad](/img/prvi-IDLE.png)
 
 Razvojno okolje IDLE
 
@@ -598,9 +622,9 @@ Razvojno okolje IDLE
 
 ## Pr' Toniju
 
-![notepad](/02/img/prvi-Thonny.png)
+![notepad](/img/prvi-Thonny.png)
 
-Razvojno okolje Thonny
+Razvojno okolje Thonnys
 
 </div>
 
@@ -615,16 +639,16 @@ Programiranje je udobnejše z integriranim razvojnim okoljem
 ## [IDLE](https://docs.python.org/3/library/idle.html)
 
 - Zelo preprost (zanimivost: napisan je v Pythonu)
-- Ko namestite Python,  se privzeto namesti tudi IDLE
+- Ko namestite Python, se privzeto namesti tudi IDLE
 - IDLE → Integrated Development and Learning Environment
 
 ## [Thonny](https://thonny.org/)
 
-- Nekoliko,  khm,  "lepši" kot IDLE
-- Kot nalašč za učenje programiranja
+- Nekoliko, khm, "lepši" kot IDLE
+- Zasnovan za učenje programiranja
 - [Navodila za namestitev](https://ucilnica.fri.uni-lj.si/mod/page/view.php?id=42205)
 
-## Drugo: [Visual Studio Code](https://code.visualstudio.com/),  [PyCharm](https://www.jetbrains.com/pycharm/),  [Spyder](https://www.spyder-ide.org/)
+## Drugo: [Visual Studio Code](https://code.visualstudio.com/), [PyCharm](https://www.jetbrains.com/pycharm/), [Spyder](https://www.spyder-ide.org/)
 <!-- [Navodila za namestitev in delo s Pythonom](https://code.visualstudio.com/docs/python/python-tutorial) |
   [navodila v slovenščini](https://www.epf.um.si/fileadmin/user_upload/Izpitni_center/Dokumenti/MLSA_Visual_Studio_Code_2021.pdf) -->
 
@@ -633,45 +657,44 @@ Programiranje je udobnejše z integriranim razvojnim okoljem
 # Pogovor z uporabnikom
 
 ## `print`
-Ko želimo uporabnika našega programa o čem obvestiti,  to najlaže storimo s funkcijo `print`,  ki izpisuje v terminal (lupina/konzola/ukazni poziv). Pravimo tudi,  da izpisuje na *standardni izhod*.
+Ko želimo uporabnika našega programa o čem obvestiti, to najlaže storimo s funkcijo `print`, ki izpisuje v terminal (lupina/konzola/ukazni poziv). Pravimo tudi, da izpisuje na <Mark>standardni izhod</Mark>.
 
 ```python
->>> print('Odgovor na vprašanje o vesolju,  življenju in sploh vsem je:',  1+5*8+1,  '!'*3)
-Odgovor na vprašanje o vesolju,  življenju in sploh vsem je: 42 !!!
+>>> print('Odgovor na vprašanje o vesolju, življenju in sploh vsem je:', 1+5*8+1, '!'*3)
+Odgovor na vprašanje o vesolju, življenju in sploh vsem je: 42 !!!
 ```
 
 <br/>
 
 ## `input`
-Ko želimo dobiti od uporabnika našega programa kakšen podatek,  ga prosimo s funkcijo `input`.
+Ko želimo od uporabnika našega programa dobiti kakšen podatek, ga zanj prosimo s funkcijo `input`.
 
 ```python
 >>> najljubsi_okus_sladoleda = input('Tvoj najljubši okus 🍨? ')
 Tvoj najljubši okus 🍨? Jogurt z gozdnimi sadeži
->>> print(najljubsi_okus_sladoleda,  'je tvoj najljubši okus,  kajne?')
-Jogurt z gozdnimi sadeži je tvoj najljubši okus,  kajne?
+>>> print(najljubsi_okus_sladoleda, 'je tvoj najljubši okus, kajne?')
+Jogurt z gozdnimi sadeži je tvoj najljubši okus, kajne?
 ```
 
-Pravimo,  da `input` bere s *standardnega vhoda*.
+Pravimo, da funkcija `input` bere s <Mark>standardnega vhoda</Mark>.
 
 ---
 
 # Prvi program: poskus izboljšave
+<p></p>
 
-<!-- Naredimo nov krog razvoja programske opreme -->
+Psihološki profil našega prvega programa (glej tri strani nazaj)
 
-#### Psihološki profil našega prvega programa:
-
-> Ta program je asocialen. Ne zanima ga mnenje drugega. Ima samo svoj prav. 
-> 
-> Njegovo vedenje je družbeno nesprejemljivo,  ne pozna osnov bontona. Ni vljuden. Je pa matematični genij, to pa.
+> Ta program je asocialen. Ne zanima ga mnenje drugega. Ima samo svoj prav.
+>
+> Njegovo vedenje je družbeno nesprejemljivo, ne pozna osnov bontona. Ni vljuden. Je pa matematični genij, to pa.
 
 Dodajmo ščepec komunikacijskih veščin in nekaj osnovne čustvene inteligence.
 
 ```python
 temp_F = input('Vnesi temperaturo v °F: ')
 temp_C = (temp_F - 32) / 1.8
-print(temp_F,  '°F je',  temp_C,  '°C.')
+print(temp_F, '°F je', temp_C, '°C.')
 ```
 
 Ojoj, spet rdeče! Kaj je tu narobe? Kje tiči napaka? Berimo ...
@@ -680,7 +703,7 @@ Ojoj, spet rdeče! Kaj je tu narobe? Kje tiči napaka? Berimo ...
 
 ```
 Traceback (most recent call last):
-  File "prvi-v2.py",  line 2,  in <module>
+  File "prvi-v2.py", line 2, in <module>
     temp_C = (temp_F - 32) / 1.8
 TypeError: unsupported operand type(s) for -: 'str' and 'int'
 ```
@@ -698,25 +721,25 @@ Navodila za Thonnyja:
 
 1. Imamo programsko kodo v urejevalniku (bodisi jo napišemo na novo bodisi odpremo obstoječo datoteko).
 2. Zaženemo razhroščevalnik na enega od načinov:
-   - v orodni vrstici kliknemo na gumb <img class="inline w-8" src="/02/img/thonny-debug.png" /> ali
+   - v orodni vrstici kliknemo na gumb <img class="inline w-8" src="/img/thonny-debug.png" /> ali
    - v meniju izberemo `Poženi` → `Razhroščevanje trenutne skripte (lepše)` ali
    - pritisnemo kombinacijo tipk <kbd>Ctrl</kbd> + <kbd>F5</kbd>.
 3. Aktivira se razhroščevalnik, ki ustavi izvajanje programa <MArk>pred izvajanjem</Mark> prvega stavka.
-   <img class="inline w-100" src="/02/img/thonny-debug-highlight.png" />
+   <img class="inline w-100" src="/img/thonny-debug-highlight.png" />
 4. Skozi program se sedaj premikamo z ukazi:
 
   <div class="grid grid-cols-4 gap-x-4">
   <div class="border">
-    <img class="inline w-8" src="/02/img/thonny-step-over.png" /> Stopi čez stavek <kbd>F6</kbd>
+    <img class="inline w-8" src="/img/thonny-step-over.png" /> Stopi čez stavek <kbd>F6</kbd>
   </div>
   <div class="border">
-    <img class="inline w-8" src="/02/img/thonny-step-into.png" /> Stopi v stavek <kbd>F7</kbd>
+    <img class="inline w-8" src="/img/thonny-step-into.png" /> Stopi v stavek <kbd>F7</kbd>
   </div>
   <div class="border">
-    <img class="inline w-8" src="/02/img/thonny-step-out.png" /> Stopi ven (iz česa?)
+    <img class="inline w-8" src="/img/thonny-step-out.png" /> Stopi ven (iz česa?)
   </div>
   <div class="border">
-    <img class="inline w-8" src="/02/img/thonny-continue.png" /> Nadaljuj <kbd>F8</kbd>
+    <img class="inline w-8" src="/img/thonny-continue.png" /> Nadaljuj <kbd>F8</kbd>
   </div>
   </div>
 
@@ -728,7 +751,7 @@ Navodila za Thonnyja:
 
 5. Izvedimo prvi stavek tako, da pritisnemo <kbd>F6</kbd>. Pozvani bomo, da vnesemo temperaturo v °F. Ubogajmo in nato pritisnimo <kbd>enter</kbd>.
 6. Ko smo v drugi vrstici, pritiskajmo <kbd>F7</kbd> in opazujmo postopno računanje izraza. Kmalu zagledamo tole:
-   <img class="inline w-100" src="/02/img/thonny-debug-found.png" />
+   <img class="inline w-100" src="/img/thonny-debug-found.png" />
 7. Spremenljivka `temp_F` očitno vsebuje *niz* `'30'` in ne *števila* `30`. Zahtevamo, da Python od niza odšteje celo število. Preveč smo zahtevni. Pametnejši odneha. Dobimo obvestilo o napaki.
 
 8. Našli smo hrošča! Tiči v drugi vrstici našega programa.
@@ -804,7 +827,7 @@ Programček izpiše `12.2`, tudi lepo!
 
 ---
 layout: image-right
-image: '/02/img/ilse-orsel-cPiKUJkTWWA-unsplash.jpg'
+image: '/img/ilse-orsel-cPiKUJkTWWA-unsplash.jpg'
 caption: 'Fotografija: Ilse Orsel'
 url: 'https://unsplash.com/photos/cPiKUJkTWWA'
 ---
@@ -823,7 +846,7 @@ iz stopinj Fahrenheita v stopinje Celzija.
 temp_F = input('Vnesi temperaturo v °F: ')
 temp_F = float(temp_F) # Niz pretvorimo v število
 temp_C = (temp_F - 32) / 1.8 # 1.8 = 9/5
-print(temp_F,  '°F je',  temp_C,  '°C.') # Izpis
+print(temp_F, '°F je', temp_C, '°C.') # Izpis
 ```
 
 Pritisnemo na <kbd>F5</kbd> in zadržimo dih ...
