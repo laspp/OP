@@ -34,17 +34,19 @@ fonts:
   če si presenter, potem uporabi url, ki ima notri ?password=geslo, da te ne gnjavi za vpis gesla
 4. npx slidev build --out dist/02 OP-02-Spoznavanje-okolja.md
 5. npx slidev export OP-02-Spoznavanje-okolja.md
+6. gswin64 -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/printer -dNOPAUSE -dQUIET -dBATCH -sOutputFile=output.pdf OP-02-Spoznavanje-okolja.pdf
+7. move output.pdf OP-02-Spoznavanje-okolja.pdf
 -->
 
-<ProgressBar bgcolor="#e11d48" completed="2" total="13"/>
+<ProgressBar bgcolor="#e54240" completed="2" total="13"/>
 
-# Spoznavanje okolja
+# {{ $slidev.configs.title }}
 
 Osnove programiranja
 
 Nejc Ilc
 
-<div class="abs-b m-6 flex gap-1 items-center justify-end text-red-600 opacity-100">
+<div class="abs-b m-6 flex gap-1 items-center justify-end text-red-500">
   <div><mdi-map-marker/> R2.41</div>
   <a class="text-2xl icon-btn !border-none !hover:text-gray"
   href="https://fri.uni-lj.si/sl/o-fakulteti/osebje/nejc-ilc">
@@ -442,7 +444,7 @@ NameError: name 'c' is not defined
 
 # Spremenljivke in uganke
 
-<!-- TODO: to daj v kviz! -->
+<!-- TODO: podobno daj v kviz 03! -->
 <!-- Nagubajmo možgane in ne pozabimo, da operator prirejanja `=` ni matematični enačaj. -->
 
 <div class="grid grid-cols-2 gap-x-4">
@@ -456,7 +458,13 @@ a = 15
 b = a + 2 * a
 ```
 
+<div v-click>
+
 <span class="solution">Rešitev: `b` postane 45. Prvi stavek spremenljivki `a` priredi celo število 15. Nato se obdela drugi stavek, kjer se najprej izračuna izraz na desni strani: `15 + 2 * 15`, ki ima rezultat 45. Zatem se ta rezultat priredi spremenljivki `b`.</span>
+
+</div>
+
+<div v-click>
 
 Še ena:
 
@@ -465,10 +473,16 @@ a = 15
 b = a + 30 % a
 ```
 
+</div>
+<div v-click>
+
 <span class="solution">Rešitev: `b` postane 15. Podobno kot prej, `a` najprej postane 15. V izrazu `15 + 30 % 15` se najprej izračuna ostanek pri deljenju 30 s 15, ki je 0, nato se ta 0 prišteje k 15 in rezultat je 15, ki se zatem priredi `b`ju.</span>
 
 </div>
+</div>
 <div>
+
+<div v-click>
 
 Kaj pa zdaj?
 
@@ -478,7 +492,13 @@ b = a
 b = 'a'
 ```
 
+</div>
+<div v-click>
+
 <span class="solution">Rešitev: `b` postane niz `'a'`. Najprej `a` postane 15. Nato `b`ju priredimo vrednost `a`ja, torej 15. V tretjem stavku pa `b`ju priredimo vrednost `'a'`, ki je mimogrede niz, in s tem povozimo prejšnjo vrednost.</span>
+
+</div>
+<div v-click>
 
 Še zadnja! Koliko je `a` na koncu?
 
@@ -487,7 +507,12 @@ a = 15
 a = a + 1
 ```
 
+</div>
+<div v-click>
+
 <span class="solution">Rešitev: Točno tako, `a` postane 16. Najprej `a` postane 15. Nato v drugi vrstici izračunamo izraz na desni, ki je `a + 1`, torej `15 + 1`. Rezultat, ki je seveda 16, se nato vpiše v `a` in s tem povozi prejšnjo vrednost.</span>
+
+</div>
 
 </div>
 </div>
@@ -624,13 +649,15 @@ Razvojno okolje IDLE
 
 ![notepad](/img/prvi-Thonny.png)
 
-Razvojno okolje Thonnys
+Razvojno okolje Thonny
 
 </div>
 
 </div>
 
 ---
+
+<!-- HERE: Do tukaj prišli 2023 -->
 
 # Urejevalnik kode - razvojno okolje
 Programiranje je udobnejše z integriranim razvojnim okoljem

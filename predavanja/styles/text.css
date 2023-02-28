@@ -26,3 +26,17 @@
     font-size: 1.7rem;
     line-height: 2.25rem;
 }
+
+.icon-btn {
+    opacity: 1.0;
+}
+
+.code-lg code {
+    font-size: 1.0rem;
+    line-height: 1.5rem;
+}
+
+.code-xl code {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}

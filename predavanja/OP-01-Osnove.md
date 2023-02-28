@@ -37,7 +37,7 @@ fonts:
 
 <ProgressBar bgcolor="#e11d48" completed="1" total="13"/>
 
-# Osnove osnov programiranja
+# {{ $slidev.configs.title }}
 
 Osnove programiranja
 
