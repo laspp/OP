@@ -447,17 +447,19 @@ print('Čas igranja:', round(toc-tic), 'sekund.')
 
 ---
 layout: image-right
-image: '/img/spacex-Ptd-iTdrCJM-unsplash.jpg'
+image: '/img/ivan-diaz-YOy-ek-aBR0-unsplash.jpg'
+caption: 'Fotografija: Ivan Diaz'
+url: 'https://unsplash.com/photos/YOy-ek-aBR0'
 ---
 
-# 5, 4, 3, 2, 1 ... vzlet!
+# 3, 2, 1, vzlet! <Marker>odstevanje</Marker>
 
 <div class="code-xl">
 
 ```python
 import time
 
-sekund_do_vzleta = 5
+sekund_do_vzleta = 3
 while sekund_do_vzleta:
     print(
         sekund_do_vzleta,
@@ -467,7 +469,7 @@ while sekund_do_vzleta:
         )
     time.sleep(1)
     sekund_do_vzleta -= 1
-print('... vzlet!')
+print('vzlet!')
 ```
 
 </div>
@@ -480,7 +482,7 @@ print('... vzlet!')
 
 <div>
 
-## ugibaj_v5.py
+### ugibaj_v5.py
 
 ```python
 from random import randint
@@ -510,7 +512,7 @@ print(cas_izpis)
 </div>
 <div>
 
-## ugibaj_modul.py
+### ugibaj_modul.py
 Razne številčne konstante in nize za izpis shranimo v to datoteko, ki jo nato uvozimo kot modul. Nahajati se mora v isti mapi kot datoteka, ki uvozi ta modul.
 
 ```python
@@ -557,11 +559,13 @@ Problemi, ki smo jih začutili prejšnji teden:
 <div>
 
 ## v1.2
+
 - besedila prestavimo v datoteko `pobegni_besedila.py` in jo uvozimo kot modul
 - poenostavimo uganko za PIN, a dodamo naključje
 - merimo čas za rešitev stopnje
 - odklep ključavnice traja nekaj časa (dramatičnost)
 - dodamo glavni meni (možnost izhoda iz igre)
+ 
 </div>
 </div>
 

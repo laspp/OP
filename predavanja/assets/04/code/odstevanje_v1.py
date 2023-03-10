@@ -1,12 +1,12 @@
 """Odštevajmo do vzleta
 
 Želimo izpis:
-5, 4, 3, 2, 1, ... vzlet!
+3, 2, 1, vzlet!
 """
 
 import time
 
-sekund_do_vzleta = 5
+sekund_do_vzleta = 3
 while sekund_do_vzleta:
     print(
         sekund_do_vzleta,
@@ -16,4 +16,4 @@ while sekund_do_vzleta:
         )
     time.sleep(1)
     sekund_do_vzleta -= 1
-print('... vzlet!')
+print('vzlet!')
