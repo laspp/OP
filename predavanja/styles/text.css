@@ -41,6 +41,10 @@
     line-height: 1.75rem;
 }
 
+.code-no-ligatures code {
+    font-family: 'Fira Code', Consolas, monospace;
+}
+
 .marker a, .marker a:hover {
     border: none;
 }
