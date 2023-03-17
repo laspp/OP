@@ -97,11 +97,15 @@ Prvih pet najboljših v vsaki kategoriji je prejelo praktične nagrade, prvi tri
 -->
 
 ---
+layout: two-cols-title
+---
+
+::title::
 
 # Programski paket za podporo tekmovanja
+Napavimo to najprej v Scratchu
 
-<div class="grid grid-cols-2 gap-x-10">
-<div>
+::left::
 
 ## Zastonj <Marker>[met_krompirja_v1.sb3](https://scratch.mit.edu/projects/818442094/)</Marker>
 
@@ -113,13 +117,9 @@ Zatakne se mu že pri drugi seriji tekmovanja.
 Praskež si omisli <Mark>seznam</Mark>, v katerega beleži dolžine. Ko se mu zahoče,
 izvede del programa za izračun najdaljšega meta oziroma povprečja vseh metov.
 
-</div>
-<div>
+::right::
 
 [![https://scratch.mit.edu/projects/818300109/](/img/met_krompirja_v3.png)](https://scratch.mit.edu/projects/818300109/)
-
-</div>
-</div>
 
 ---
 
@@ -216,7 +216,10 @@ Dolžino seznama dobimo s funkcijo `len()`.
 [^1]: Nekateri, redki, programski jeziki začenjajo sezname z naslovom 1, npr. Fortran, Julia, Lua, MATLAB, R, Scratch.
 
 ---
+layout: two-cols-title
+---
 
+::title::
 # Indeksi in dostop do elementov
 Vsak element seznama ima svoj indeks, preko katerega ga lahko dosežemo.
 
@@ -231,8 +234,7 @@ studenti = ['Sofija', 'Lenart', 'Patrik', 'Erazem']
 
 </div>
 
-<div class="grid grid-cols-2 gap-x-10">
-<div>
+::left::
 
 - Do elementov dostopamo z oglatimi oklepaji. Študentka Sofija je prva v seznamu in ima indeks 0. Njeno ime dobimo tako:
   
@@ -244,8 +246,7 @@ studenti = ['Sofija', 'Lenart', 'Patrik', 'Erazem']
   
   `Lenart`
 
-</div>
-<div>
+::right::
 
 - Zadnji element ima indeks 3, ki ga lahko izračunamo tako: "dolžina seznama minus ena":
   
@@ -256,9 +257,6 @@ studenti = ['Sofija', 'Lenart', 'Patrik', 'Erazem']
   `studenti[len(studenti) - 1]`
 
   V Pythonu obstaja tudi lažji način, da pridemo do zadnjega, predzadnjega itd. Obrni stran.
-
-</div>
-</div>
 
 ---
 
@@ -323,7 +321,6 @@ IndexError: list index out of range
 
 </div>
 </div>
-
 
 ---
 layout: two-cols-title
@@ -428,7 +425,6 @@ Rezino v Pythonu določimo tako, da povemo njen začetni in končni indeks (lahk
 </div>
 </div>
 
-
 ---
 
 # Rezine
@@ -527,11 +523,14 @@ range(1, 20, 2)
 </div>
 
 ---
+layout: two-cols-title
+---
+
+::title::
 
 # `range()` - primeri
 
-<div class="grid grid-cols-2 gap-x-10">
-<div>
+::left::
 
 **Prvih 10 naravnih števil**, vključimo tudi 0:
 
@@ -556,8 +555,7 @@ Primer za `a = 1` in `b = 20`:
 [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
 ```
 
-</div>
-<div>
+::right::
 
 **Seznam večkratnikov**, ki vsebuje večkratnike števila `a` od `a` do vključno `b`. Primer za `a = 3` in `b = 21`:
 
@@ -581,15 +579,14 @@ izdelajmo seznam vseh sodih števil od `a` do vključno `b`. Ni nujno, da je `a`
 [5, 4, 3, 2, 1, 0]
 ```
 
-</div>
-</div>
-
+---
+layout: two-cols-title
 ---
 
+::title::
 # Operatorji nad seznami
 
-<div class="grid grid-cols-2 gap-x-10">
-<div>
+::left::
 
 ## Vsebovanost
 Z operatorjema `in` in `not in` lahko preverimo, ali seznam vsebuje določen element ali ne.
@@ -611,8 +608,7 @@ Operator `+` lepi skupaj dva seznama, operator `*` naredi več kopij vsebine sez
 [0, 0, 0, 0, 0]
 ```
 
-</div>
-<div>
+::right::
 
 ## Primerjanje
 Kdaj je nek seznam večji/manjši od drugega? Gledamo istoležne elemente in jih primerjamo. Uporabimo lahko tudi `>=` in `<=`.
@@ -633,16 +629,15 @@ False
 False
 ```
 
-</div>
-</div>
-
+---
+layout: two-cols-title
 ---
 
+::title::
 # Funkcije nad seznami
 Vgrajene funkcije, ki sprejmejo seznam kot argument (razen prve)
 
-<div class="grid grid-cols-2 gap-x-10">
-<div>
+::left::
 
 ## `list()`
 
@@ -665,8 +660,7 @@ False
 True
 ```
 
-</div>
-<div>
+::right::
 
 ## `len()`, `sum()`, `min()`, `max()`
 
@@ -690,9 +684,6 @@ Znamo izračunati povprečno dolžino meta?
 >>> sum(meti) / len(meti) # vsota / dolžina
 70.28571428571429
 ```
-
-</div>
-</div>
 
 ---
 layout: two-cols-title
@@ -776,7 +767,6 @@ layout: two-cols
 >>> seznam
 []
 ```
-
 
 ## `seznam.copy()`
 
@@ -991,6 +981,8 @@ Brisanje elementov je mogoče tudi s stavkom `del`:
 ---
 layout: two-cols-title
 ---
+
+<!-- 2023: do tukaj smo prišli, nismo še naredili programa -->
 
 ::title::
 
