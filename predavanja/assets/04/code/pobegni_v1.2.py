@@ -25,7 +25,7 @@ import sys
 # Besedila
 ###########################################################
 # Uvozimo besedila pod imenom 'bes'
-import igra_pobegni_besedila as bes
+import pobegni_besedila as bes
 
 ###########################################################
 # Uvodni zaslon

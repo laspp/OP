@@ -1039,14 +1039,16 @@ Rezultat funkcije `eval()` je ovrednoten vhodni niz: kot če bi ga vnesli v inte
 </div>
 
 ---
+layout: two-cols-title
+---
 
+::title::
 # Nizi so v sorodu s seznami
 Oba podatkovna tipa opisujeta zaporedje
 
 Kar smo tu povedali za sezname, velja tudi za nize. No, precej metod sicer manjka ... Lahko pa na enak način indeksiramo elemente, delamo rezine, seštevamo in množimo nize, uporabljamo funkcijo `len`, operatorja `in` in `not in`, ...
 
-<div class="grid grid-cols-2 gap-x-10">
-<div>
+::left::
 
 ```python
 >>> niz = 'ABC'
@@ -1066,8 +1068,7 @@ Kar smo tu povedali za sezname, velja tudi za nize. No, precej metod sicer manjk
 'CBA'
 ```
 
-</div>
-<div>
+::right::
 
 ```python
 >>> 'Rad imam '+ niz + ' sirček'
@@ -1083,10 +1084,10 @@ True
 1
 >>> niz.index('s')
 4
+>>> palindrom = 'potop'           # palindrom se bere
+>>> palindrom == palindrom[::-1]  # z obeh strani enako
+True
 ```
-
-</div>
-</div>
 
 ---
 
