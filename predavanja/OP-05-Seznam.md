@@ -739,7 +739,7 @@ Seznam je objekt ... poglejmo njegove najbolj uporabne metode
 | `seznam.sort()`    | urejanje seznama  |
 | `seznam.append(x)` | na konec dodamo element `x` |
 | `seznam.insert(i,x)` | na indeks `i` vrinemo element `x`  |
-| `s1.extend(s2)` | Seznam `s1` razširimo s `s2` (to naredi tudi  `+`) |
+| `s1.extend(s2)` | Seznam `s1` razširimo s `s2` (to naredi tudi  `+=`) |
 
 ::right::
 
@@ -843,20 +843,15 @@ layout: two-cols
 
 ```python
 # Seznam `seznam1` razširimo s seznamom `seznam2`.
-# Zlepimo ju skupaj. To dela tudi `+` oziroma `+=`.
+# Zlepimo ju skupaj. To dela tudi `+=`.
 >>> seznam1 = [1, 2, 3]
 >>> seznam2 = [4, 5, 6]
 >>> seznam1.extend(seznam2)
 >>> seznam1
 [1, 2, 3, 4, 5, 6]
->>> seznam1 = seznam1 + [7, 8]
+>>> seznam1 += [7, 8]
 >>> seznam1
 [1, 2, 3, 4, 5, 6, 7, 8]
->>> seznam1 += [9]
->>> seznam1
-[1, 2, 3, 4, 5, 6, 7, 8, 9]
->>> seznam1[:3] + [0, 0, 0] + seznam1[3:]
-[1, 2, 3, 0, 0, 0, 4, 5, 6, 7, 8, 9]
 ```
 
 ---
