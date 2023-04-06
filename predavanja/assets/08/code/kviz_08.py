@@ -1,7 +1,7 @@
 # Kviz
 
 """
-1. Imamo seznam seznamov. Kako naslovimo belega konja?
+1. Na sliki vidimo seznam seznamov. Kako naslovimo belega konja?
 Odgovori:
  ✓ plosca[3][1]
     plosca[1][3]
@@ -19,7 +19,7 @@ plosca = [
 # print(plosca[3][1])
 
 """
-2. Isti seznam kot prej. Radi bi dobili seznam vseh črnih kmetov? Kateri izraz NI pravilen?
+2. Imamo isti seznam kot prej. Radi bi dobili seznam vseh črnih kmetov? Kateri izraz NI pravilen?
 Odgovori:
     plosca[1]
     plosca[1][:]
@@ -33,7 +33,7 @@ print(plosca[1][:4])
 print(plosca[1][1:4])
 
 """
-3. Kaj izpiše program?
+3. Kaj izpiše program na sliki?
 Odgovori:
     Črne kmete
     Bele kmete

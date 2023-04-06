@@ -75,12 +75,16 @@ caption: 'Fotografiji: <a href="https://unsplash.com/@kilimanjarostudioz?utm_sou
 
 <div class="text-black">
 
+<div v-click>
+
 # Spremenljivost objektov
 Nekateri objekti se lahko spreminjajo kot plastelin, drugi so nespremenljivi kot ... kamen?
 
+</div>
+
 <div class="grid grid-cols-2 gap-x-0">
 
-<div class="border-r-3 h-140">
+<div v-click class="border-r-3 h-140">
 
 ## Spremenljivi
 Lahko spreminjamo vsebino (ang. *mutable*)
@@ -90,7 +94,7 @@ Lahko spreminjamo vsebino (ang. *mutable*)
 - slovar `dict`
 
 </div>
-<div class="pl-10">
+<div v-click class="pl-10">
 
 ## Nespremenljivi
 Ne moremo spreminjati vsebine  
