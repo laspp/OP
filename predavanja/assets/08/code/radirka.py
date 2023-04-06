@@ -1,9 +1,9 @@
-"""
-Napišimo funkcijo, ki sprejme dva niza in iz prvega izbriše vse
-znake, ki se pojavijo v drugem.
-"""
 
 def radirka_niz(prvi, drugi):
+    """
+    Sprejme dva niza: iz prvega izbriše vse znake, ki se
+    pojavijo v drugem. Vrne spremenjeni niz.
+    """
     # Z zanko gremo čez drugi niz
     for i in drugi:
         # Brišemo vse pojavitve znaka i iz prvega niza
@@ -11,6 +11,10 @@ def radirka_niz(prvi, drugi):
     return prvi
 
 def radirka_seznam(prvi, drugi):
+    """
+    Sprejme dva seznama: iz prvega izbriše vse elemente, ki se
+    pojavijo v drugem.
+    """
     # Z zanko gremo čez drugi seznam
     for i in drugi:
         # Brišemo element i iz prvega, lahko jih je več
