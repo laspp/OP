@@ -368,7 +368,7 @@ Namesto metode `copy()` lahko uporabimo rezino `[:]`, ki pa naredi isto kot `cop
 [[0, 2], 3]         # kopija ne kopira vdelanih reči.
 ```
 
-Ko ne zaleže `copy()`, uporabi `deepcopy()`.
+Ko ne zaleže `copy()`, uporabi `deepcopy()` iz modula `copy`.
 
 ---
 layout: two-cols-title
