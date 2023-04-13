@@ -26,9 +26,9 @@ const image = ref(props.src)
 </script>
 
 <template>  
-  <div :class="props.class">
+  <div>
     <div>
-      <img :width="props.width" :alt="props.alt" :src="props.src"/>
+      <img :class="props.class" :width="props.width" :alt="props.alt" :src="props.src"/>
     </div>
     <div v-if="props.caption" class="rel-b m-2 pl-2 text-sm opacity-70">
         <span v-html="props.caption"></span>
