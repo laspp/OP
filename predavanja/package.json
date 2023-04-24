@@ -1,5 +1,5 @@
 {
-  "name": "01-osnove",
+  "name": "osnove-programiranja-predavanja",
   "private": true,
   "scripts": {
     "build": "slidev build",
@@ -7,7 +7,7 @@
     "export": "slidev export"
   },
   "dependencies": {
-    "@slidev/cli": "^0.39.0",
+    "@slidev/cli": "^0.40.0",
     "@slidev/theme-apple-basic": "^0.20.0",
     "@slidev/theme-bricks": "^0.0.2",
     "@slidev/theme-default": "*",

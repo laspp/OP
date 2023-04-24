@@ -1119,8 +1119,8 @@ Primer:
 <ul style='list-style-type: none !important'>
    <li> <code>🛡️</code> vsebina terke je zaščitena pred dodajanjem, spreminjanjem in brisanjem;</li>
    <li> <code>🚫</code> če jo podamo kot argument, je funkcija ne more spreminjati. Seznam lahko.</li>
-   <li> <code>🗝️</code> lahko je <i>ključ</i> v slovarju (prihodnjič);</li>
-   <li> <code>{}</code>  lahko je element <i>množice</i> (prihodnjič).</li>
+   <li> <code>{}</code>  lahko je element <i>množice</i> (prihodnjič);</li>
+   <li> <code>🗝️</code> lahko je <i>ključ</i> v slovarju (čez dva tedna).</li>
 </ul>
 <br/>
 

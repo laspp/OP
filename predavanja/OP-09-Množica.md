@@ -5,7 +5,7 @@ download: false
 info: Predavanja pri predmetu Osnove programiranja
 theme: default
 themeConfig:
-  primary: #e54240
+  primary: null
 background: false
 class: text-center
 highlighter: shiki
@@ -66,6 +66,7 @@ Nejc Ilc
   </a>
 </div>
 
+
 ---
 layout: two-cols-title
 ---
@@ -111,6 +112,7 @@ Lahko ustvarimo prazno ali neprazno množico ali pa v množico pretvorimo zapore
 ::left::
 
 Kot smo že omenili, je edini način, da ustvarimo prazno množico ta:
+
 ```python
 >>> set()
 set()
