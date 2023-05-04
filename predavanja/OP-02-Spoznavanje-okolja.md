@@ -173,7 +173,7 @@ niz, zaporedje znakov (ang. *string*). Niz zapišemo v enojne `'`, dvojne `"` al
 
 `'Vzkliknil je: "Pri moji duši!"'`
 
- `'''Vzkliknil je: "Pr' méj duš'!"'''`
+`'''Vzkliknil je: "Pr' méj duš'!"'''`
 
 </div>
 </div>
