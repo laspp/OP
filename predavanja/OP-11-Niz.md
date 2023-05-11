@@ -87,7 +87,7 @@ def povprecje(seznam):
     return sum(seznam) / len(seznam)
 ```
 
-Do dokumentacije pridemo z `help(povprecje)` ali pa preko lastnosti objekta: `povprecje.__doc__`.
+Do dokumentacije pridemo s `help(povprecje)` ali pa preko lastnosti objekta: `povprecje.__doc__`.
 
 ::right::
 
@@ -440,7 +440,7 @@ layout: two-cols-title
 
 ::title::
 
-# Oblikovanje izpisa z *f-nizom*
+# Oblikovanje izpisa s *f-nizom*
 Kako nadziramo število decimalnih mest, poravnavo ipd.
 
 ::left::

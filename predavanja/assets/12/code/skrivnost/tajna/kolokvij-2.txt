@@ -1,0 +1,3 @@
+REŠITVE 2. kolokvija 
+pri predmetu Osnove programiranja 
+v jeziku JavaScript.
