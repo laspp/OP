@@ -53,7 +53,7 @@ koncnica = '.JPG'
 preimenuj_datoteke = True
 
 # Hočemo tudi spremeniti velikost slik? Daj False, če ne želiš.
-spremeni_velikost = 1.5 # faktor
+spremeni_velikost = 0.5 # faktor
 
 ustvari_kopijo = pot_mapa_izhod != ''
 

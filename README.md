@@ -1,4 +1,4 @@
 # Osnove programiranja
 Predmet na FKKT, izbirni, letni semester
 
-[Predavanja](./predavanja/)
+[Predavanja](./predavanja/README.md)

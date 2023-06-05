@@ -18,7 +18,7 @@ params = {
     'latitude': 46.0569,    # zemlj. širina za Ljubljano
     'longitude': 14.5058,   # zemlj. dolžina za Ljubljano
     'hourly': 'temperature_2m,precipitation_probability',
-    'forecast_days': 1,     # napoved za toliko dni
+    'forecast_days': 3,     # napoved za toliko dni
     'timezone': 'Europe/Ljubljana'  # časovni pas
 }
 
