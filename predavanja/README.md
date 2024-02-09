@@ -4,8 +4,8 @@ Gradiva za predavanja (predstavitve, izvorna koda, ...).
 
 ## Namestitev in zagon predstavitev
 
-- `npm install`
-- `npx slidev [ime datoteke .md]`, primer: `npx slidev OP-01-Osnove.md`
+- `npm install` | `pnpm install`
+- `npx slidev [ime datoteke .md]` | `pnpm slidev [ime datoteke .md]`, primer: `pnpm slidev OP-01-Osnove.md`
 - v brskalniku odprite `http://localhost:3030`
 
 ## Poglavja

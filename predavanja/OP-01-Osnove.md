@@ -4,6 +4,7 @@ exportFilename: OP-01-Osnove.pdf
 download: false
 info: Predavanja pri predmetu Osnove programiranja
 theme: default
+colorSchema: light
 background: false
 class: text-center
 highlighter: shiki
@@ -26,11 +27,11 @@ fonts:
 <!-- 
 1. Spremeni `vite.config.ts`, da publicDir kaže na ustrezno mapo gradiva za predavanje 
     publicDir: './assets/01'
-2. npx slidev OP-01-Osnove.md
-3. npx slidev --remote=geslo OP-01-Osnove.md 
+2. pnpm slidev OP-01-Osnove.md
+3. pnpm slidev --remote=geslo OP-01-Osnove.md 
   če si presenter, potem uporabi url, ki ima notri ?password=geslo, da te ne gnjavi za vpis gesla
-4. npx slidev build --out dist/01 OP-01-Osnove.md
-5. npx slidev export OP-01-Osnove.md
+4. pnpm slidev build --out dist/01 OP-01-Osnove.md
+5. pnpm slidev export OP-01-Osnove.md
 6. gswin64 -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/printer -dNOPAUSE -dQUIET -dBATCH -sOutputFile=output.pdf OP-01-Osnove.pdf
 7. move output.pdf OP-01-Osnove.pdf
 -->

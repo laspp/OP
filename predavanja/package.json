@@ -1,21 +1,27 @@
 {
   "name": "osnove-programiranja-predavanja",
   "private": true,
+  "type": "module",
   "scripts": {
     "build": "slidev build",
-    "dev": "slidev --open",
+    "dev": "slidev",
     "export": "slidev export"
   },
   "dependencies": {
-    "@slidev/cli": "^0.40.0",
+    "@slidev/cli": "^0.47.4",
     "@slidev/theme-apple-basic": "^0.20.0",
     "@slidev/theme-bricks": "^0.0.2",
-    "@slidev/theme-default": "*",
-    "@slidev/theme-seriph": "*",
-    "slidev-theme-academic": "^1.1.1"
+    "@slidev/theme-default": "^0.25.0",
+    "@slidev/theme-seriph": "^0.25.0",
+    "slidev-theme-academic": "^1.2.0"
   },
   "devDependencies": {
-    "@iconify-json/mdi": "^1.1.46",
-    "playwright-chromium": "^1.30.0"
+    "@iconify-json/mdi": "^1.1.64",
+    "playwright-chromium": "^1.41.2"
+  },
+  "pnpm": {
+    "overrides": {
+      "axios@>=0.8.1 <1.6.0": ">=1.6.0"
+    }
   }
 }
