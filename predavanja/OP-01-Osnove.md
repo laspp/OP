@@ -99,6 +99,17 @@ Miha Moškon:
 -->
 
 ---
+layout: image-right
+image: './img/laptop-stickers.jpg'
+caption: 'Fotografija: Jorge Acre '
+url: 'https://www.pexels.com/photo/laptop-by-frappe-16625517/'
+---
+
+# Kaj mi bo ocena, če pa lahko dobim ...
+
+<div class="flex justify-center" v-click><Image width="300" alt="OP značka" src="/img/OP-znacka-2024.png" caption="Značko dobi vsak, ki reši vsaj 80 % domačih nalog." url="https://ucilnica.fri.uni-lj.si/badges/overview.php?id=16"/></div>
+
+---
 layout: fact
 transition: slide-left
 ---
