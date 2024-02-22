@@ -67,7 +67,7 @@ Nejc Ilc
 
 <!-- 
 1. Predstavitev
-- predstavim se sam (družina, izobrazba, hobiji, zakaj predavam ta predmet)
+- predstavim se sam
 - študenti, vsak pove svoje ime in priimek, od kod prihaja, enega od hobijev. 
 - Vsak ima 10 sekund.
 
@@ -104,7 +104,7 @@ Miha Moškon:
 
 ---
 layout: image-right
-image: './img/laptop-stickers.jpg'
+image: '/img/laptop-stickers.jpg'
 caption: 'Fotografija: Jorge Acre '
 url: 'https://www.pexels.com/photo/laptop-by-frappe-16625517/'
 ---
@@ -157,6 +157,12 @@ transition: slide-left
 layout: image
 image: '/img/stable-diffusion-superman-batman-2.jpg'
 caption: 'Na <a href="https://stablediffusionweb.com" target="_blank">stablediffusionweb.com</a> smo vnesli opis: <i>clear portrait of a superhero concept between spiderman and batman, background hyper detailed, character concept, full body, dynamic pose, intricate, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration</i>.'
+transition: slide-left
+---
+
+---
+layout: iframe
+url: https://www.youtube.com/embed/HK6y8DAPN_0?si=MGypuAqmRvgQ036p
 transition: slide-left
 ---
 
@@ -362,7 +368,10 @@ style A fill:#fbb,stroke:#555,stroke-width:4px
 </div>
 <div>
 
-OP naj se 2 sekundi premika naprej.
+Problem/cilj/naloga/izziv:
+
+OP naj se 2 sekundi premika naprej. 🫡
+
 
 </div>
 </div>
@@ -390,7 +399,39 @@ style B fill:#fbb,stroke:#555,stroke-width:4px
 </div>
 <div>
 
-Razmišljamo:
+Najprej moramo spoznati anatomijo robotka OP: njegove sestavne dele, način premikanja, ...
+
+<div style="margin:50px 0px;"> <iframe width="100%" title="Ev3-rem-driving-base" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/7295e6567a29477bbd94908311987dbc/embed"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 0px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/ev3-rem-driving-base-7295e6567a29477bbd94908311987dbc?utm_medium=embed&utm_campaign=share-popup&utm_content=7295e6567a29477bbd94908311987dbc" target="_blank" rel="nofollow"> Ev3-rem-driving-base </a> by <a href="https://sketchfab.com/bgcaastemkids?utm_medium=embed&utm_campaign=share-popup&utm_content=7295e6567a29477bbd94908311987dbc" target="_blank" rel="nofollow"> bgcaastemkids </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=7295e6567a29477bbd94908311987dbc" target="_blank" rel="nofollow">Sketchfab</a></p></div>
+
+Torej, ima programirljive možgane ("kocko"), dva motorja, dve kolesi, ...
+
+</div>
+</div>
+
+---
+transition: fade
+---
+
+# Življenje programerja: analizirajmo problem
+
+<div class="grid grid-cols-2 gap-x-4">
+
+<div>
+
+```mermaid {theme: 'neutral', scale: 1.0}
+graph TD
+A[Problem] --> B([Razumevanje problema])
+B --> C([Snovanje algoritma])
+C --> D(["Izdelava programa <br/> (kodiranje)"])
+D --> E([Testiranje])
+E --> C
+style B fill:#fbb,stroke:#555,stroke-width:4px
+```
+
+</div>
+<div>
+
+Razmišljamo naprej:
 
 <div v-click>
 
@@ -762,9 +803,11 @@ Programski jezik Scratch, <a href="https://scratch.mit.edu/projects/799365193" t
 
 <div>
 
+<div v-click>
 <a href="https://scratch.mit.edu/projects/799365193" target="_blang">
 <img width="260" alt="Scratch: Evklidov algoritem" src="/img/Evklidov-algoritem-Scratch.png">
 </a>
+</div>
 
 </div>
 
