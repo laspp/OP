@@ -29,13 +29,13 @@ fonts:
 1. Spremeni `vite.config.ts`, da publicDir kaže na ustrezno mapo gradiva za predavanje 
     publicDir: './assets/02'
    Popravi ProgressBar completed na ustrezno številko predavanja
-2. npx slidev OP-02-Spoznavanje-okolja.md
-3. npx slidev --remote=geslo OP-02-Spoznavanje-okolja.md 
+2. pnpm slidev OP-02-Spoznavanje-okolja.md
+3. pnpm slidev --remote=geslo OP-02-Spoznavanje-okolja.md 
   če si presenter, potem uporabi url, ki ima notri ?password=geslo, da te ne gnjavi za vpis gesla
-4. npx slidev build --out dist/02 OP-02-Spoznavanje-okolja.md
-5. npx slidev export OP-02-Spoznavanje-okolja.md
-6. gswin64 -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/printer -dNOPAUSE -dQUIET -dBATCH -sOutputFile=output.pdf OP-02-Spoznavanje-okolja.pdf
-7. move output.pdf OP-02-Spoznavanje-okolja.pdf
+4. pnpm slidev build --out dist/02 OP-02-Spoznavanje-okolja.md
+5. pnpm slidev export OP-02-Spoznavanje-okolja.md
+6. gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/printer -dNOPAUSE -dQUIET -dBATCH -sOutputFile=output.pdf OP-02-Spoznavanje-okolja.pdf
+7. mv output.pdf OP-02-Spoznavanje-okolja.pdf
 -->
 
 <ProgressBar bgcolor="#e54240" completed="2" total="13"/>
@@ -81,11 +81,11 @@ Ni nujno, lahko pa. Uporabljali bomo namreč orodje, ki ima Python že vgrajen.
 
 ## Zakaj ravno Python?
 
-- Python je eden najbolj priljubljenih programskih jezikov
-- Enostaven za začetnike, a hkrati dovolj močan za stare mačke
-- Koda je pregledna, čista, berljiva → zelo blizu psevdo kodi
-- "Baterije so priložene" → obširna knjižnica razpoložljivih modulov
-- Je kdo omenil kemijo? Python se lepo razume z orodji računalniške kemije
+- 💘 Python je eden najbolj priljubljenih programskih jezikov
+- 🚀 Enostaven za začetnike, a hkrati dovolj močan za stare mačke
+- ✨ Koda je pregledna, čista, berljiva → zelo blizu psevdo kodi
+- 🔋 "Baterije so priložene" → obširna knjižnica razpoložljivih modulov
+- 🧪 Je kdo omenil kemijo? Python se lepo razume z orodji računalniške kemije
   ([PyMOL](https://pymol.org/), [Maestro](https://www.schrodinger.com/products/maestro), [RDkit](https://www.rdkit.org/))
 
 ---
@@ -98,7 +98,7 @@ Python je interaktivni <Mark>tolmač</Mark> → ukaze sproti tolmači v jezik ra
 
 Pritisnite tipko <kbd><mdi-microsoft-windows/></kbd>, vtipkajte `cmd` in pritisnite tipko <kbd>enter</kbd>.
 
-Nato vpišite `python` in pritisnite <kbd>enter</kbd>. To bo seveda delovalo le, če imate nameščen Python.
+Nato vpišite `python` in pritisnite <kbd>enter</kbd>. To bo seveda delovalo le, če je Python nameščen na vašem sistemu.
 
 Začnimo pogovor v slogu osnovnošolske matematike:
 
@@ -134,7 +134,7 @@ Matematični operatorji, ostale pogledamo pozneje
 # Podatkovni tipi
 Vsaka vrednost oziroma podatek ima posebno lastnost: <Mark>podatkovni tip</Mark>.
 
-Tip podatka torej govori o tem, kaj podatek predstavlja in kaj lahko z njim počnemo.
+Tip podatka govori o tem, kaj podatek predstavlja in kaj lahko z njim počnemo.
 
 ## `int`
 celo število (ang. *integer*)
@@ -352,7 +352,7 @@ pow(2, 1234567890, 4)
 ---
 
 # Vgrajene funkcije
-Te funkcije so vedno dostopne. [Seznam za Python 3.11](href="https://docs.python.org/3/library/functions.html").
+Te funkcije so vedno dostopne. [Seznam za zadnjo verzijo Pythona](href="https://docs.python.org/3/library/functions.html").
 
 <a href="https://docs.python.org/3/library/functions.html" target="_blank"><Image width="370" src="/img/python-built-in-functions.png" alt="Vgrajene funkcije"/></a>
 
@@ -453,7 +453,7 @@ NameError: name 'c' is not defined
 
 Kakšno vrednost ima `b` po naslednjem zaporedju stavkov?
 
-```python {monaco}
+```python
 a = 15
 b = a + 2 * a
 ```
@@ -468,7 +468,7 @@ b = a + 2 * a
 
 Še ena:
 
-```python {monaco}
+```python
 a = 15
 b = a + 30 % a
 ```
@@ -486,7 +486,7 @@ b = a + 30 % a
 
 Kaj pa zdaj?
 
-```python {monaco}
+```python
 a = 15
 b = a
 b = 'a'
@@ -502,7 +502,7 @@ b = 'a'
 
 Še zadnja! Koliko je `a` na koncu?
 
-```python {monaco}
+```python
 a = 15
 a = a + 1
 ```
@@ -751,7 +751,7 @@ Navodila za Thonnyja:
    - v orodni vrstici kliknemo na gumb <img class="inline w-8" src="/img/thonny-debug.png" /> ali
    - v meniju izberemo `Poženi` → `Razhroščevanje trenutne skripte (lepše)` ali
    - pritisnemo kombinacijo tipk <kbd>Ctrl</kbd> + <kbd>F5</kbd>.
-3. Aktivira se razhroščevalnik, ki ustavi izvajanje programa <MArk>pred izvajanjem</Mark> prvega stavka.
+3. Aktivira se razhroščevalnik, ki ustavi izvajanje programa <Mark>pred izvajanjem</Mark> prvega stavka.
    <img class="inline w-100" src="/img/thonny-debug-highlight.png" />
 4. Skozi program se sedaj premikamo z ukazi:
 
