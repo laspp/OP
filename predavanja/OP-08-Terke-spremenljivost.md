@@ -41,7 +41,7 @@ Pages :---
 7. move output.pdf OP-08-Terke-spremenljivost.pdf
 -->
 
-<ProgressBar bgcolor="#e54240" completed="8" total="13"/>
+<ProgressBar bgcolor="#e54240" :completed=8 :total=13 />
 
 # {{ $slidev.configs.title }}
 

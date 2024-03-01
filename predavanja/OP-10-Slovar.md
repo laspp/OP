@@ -41,7 +41,7 @@ Pages :---
 7. move output.pdf OP-10-Slovar.pdf
 -->
 
-<ProgressBar bgcolor="#e54240" completed="10" total="13"/>
+<ProgressBar bgcolor="#e54240" :completed=10 :total=13 />
 
 # {{ $slidev.configs.title }}
 

@@ -40,7 +40,7 @@ Windows: gswin64 ...
 Windows: move output.pdf OP-01-Osnove.pdf
 -->
 
-<ProgressBar bgcolor="#e11d48" completed="1" total="13"/>
+<ProgressBar bgcolor="#e11d48" :completed=1 :total=13 />
 
 # {{ $slidev.configs.title }}
 

@@ -38,7 +38,7 @@ fonts:
 7. move output.pdf OP-04-Zanka-while-moduli.pdf
 -->
 
-<ProgressBar bgcolor="#e54240" completed="4" total="13"/>
+<ProgressBar bgcolor="#e54240" :completed=4 :total=13 />
 
 # {{ $slidev.configs.title }}
 

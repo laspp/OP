@@ -38,7 +38,7 @@ fonts:
 7. mv output.pdf OP-02-Spoznavanje-okolja.pdf
 -->
 
-<ProgressBar bgcolor="#e54240" completed="2" total="13"/>
+<ProgressBar bgcolor="#e54240" :completed=2 :total=13 />
 
 # {{ $slidev.configs.title }}
 

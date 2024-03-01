@@ -41,7 +41,7 @@ Pages :---
 7. move output.pdf OP-12-Datoteke.pdf
 -->
 
-<ProgressBar bgcolor="#e54240" completed="12" total="13"/>
+<ProgressBar bgcolor="#e54240" :completed=12 :total=13 />
 
 # {{ $slidev.configs.title }}
 

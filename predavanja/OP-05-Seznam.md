@@ -38,7 +38,7 @@ fonts:
 7. move output.pdf OP-05-Seznam.pdf
 -->
 
-<ProgressBar bgcolor="#e54240" completed="5" total="13"/>
+<ProgressBar bgcolor="#e54240" :completed=5 :total=13 />
 
 # {{ $slidev.configs.title }}
 

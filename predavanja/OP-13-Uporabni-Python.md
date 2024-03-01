@@ -41,7 +41,7 @@ Pages :---
 7. move output.pdf OP-13-Uporabni-Python.pdf
 -->
 
-<ProgressBar bgcolor="#e54240" completed="13" total="13"/>
+<ProgressBar bgcolor="#e54240" :completed=13 :total=13 />
 
 # {{ $slidev.configs.title }}
 

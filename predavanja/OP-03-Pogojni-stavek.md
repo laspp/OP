@@ -38,7 +38,7 @@ fonts:
 7. move output.pdf OP-03-Pogojni-stavek.pdf
 -->
 
-<ProgressBar bgcolor="#e54240" completed="3" total="13"/>
+<ProgressBar bgcolor="#e54240" :completed=3 :total=13 />
 
 # {{ $slidev.configs.title }}
 
