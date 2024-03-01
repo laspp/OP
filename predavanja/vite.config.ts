@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-    publicDir: './assets/02'
+    publicDir: './assets/01'
 })
