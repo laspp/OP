@@ -92,7 +92,7 @@ Ni nujno, lahko pa. Uporabljali bomo namreč orodje, ki ima Python že vgrajen.
 
 # Prvi zmenek
 
-Python je interaktivni <Mark>tolmač</Mark> → ukaze sproti tolmači v jezik računalnika, tj. <Mark>strojni</Mark> jezik
+Python je interaktivni <mark>tolmač</mark> → ukaze sproti tolmači v jezik računalnika, tj. <mark>strojni</mark> jezik
 
 ## Zagon ukaznega poziva na Windows
 
@@ -132,7 +132,7 @@ Matematični operatorji, ostale pogledamo pozneje
 ---
 
 # Podatkovni tipi
-Vsaka vrednost oziroma podatek ima posebno lastnost: <Mark>podatkovni tip</Mark>.
+Vsaka vrednost oziroma podatek ima posebno lastnost: <mark>podatkovni tip</mark>.
 
 Tip podatka govori o tem, kaj podatek predstavlja in kaj lahko z njim počnemo.
 
@@ -160,7 +160,7 @@ niz, zaporedje znakov (ang. *string*). Niz zapišemo v enojne `'`, dvojne `"` al
 
 `"Moj program je kot 🚀"`
 
-`'ᚩᛋᚾᚩvᛖ ᛈᚱᚩᚷᚱᚫᛗᛁᚱᚫᚾjᚫ'`
+`'ᚷᚩᛋᛈᚩᛞᚫᚱ ᚫᛚᚷᚩᚱᛁᛏᛗᚫ'`
 
 `'42'`
 
@@ -326,7 +326,7 @@ Opa, na nekaj smo pozabili. `dan` bi moral biti niz `'dan'`, pri nas pa je kaj? 
 ---
 
 # Funkcije
-Funkcije <Mark>sprejemajo argumente</Mark> in (lahko) <Mark>vračajo rezultat</Mark>.
+Funkcije <mark>sprejemajo argumente</mark> in (lahko) <mark>vračajo rezultat</mark>.
 
 Klic funkcije: `ime_funkcije(argument_1, argument_2, ...)`
 
@@ -372,7 +372,7 @@ max(min(0.5, 1), 0)
 'Rekel je: "' + 'bla'*3 + '".'
 ```
 
-Ko Pythonovi ukazni vrstici podamo izraz in pritisnemo <kbd>enter</kbd>, dobimo <Mark>rezultat</Mark> izraza.
+Ko Pythonovi ukazni vrstici podamo izraz in pritisnemo <kbd>enter</kbd>, dobimo <mark>rezultat</mark> izraza.
 
 ```python
 >>> 1+5 * 8+1
@@ -387,9 +387,9 @@ layout: fact
 # a = 42
 spremenljivka = izraz
 
-<Mark>Spremenljivka</Mark> je na levi, na desni pa je <Mark>izraz</Mark>. Nikoli obratno!
+<mark>Spremenljivka</mark> je na levi, na desni pa je <mark>izraz</mark>. Nikoli obratno!
 
-Vmes je `=`, ki je <Mark>operator prirejanja</Mark>. To ni navaden enačaj.
+Vmes je `=`, ki je <mark>operator prirejanja</mark>. To ni navaden enačaj.
 
 Ta rezultat se nato shrani v spomin, ki ga lahko označimo, poimenujemo.
 
@@ -401,7 +401,7 @@ Namesto `42` bi seveda lahko napisali poljuben izraz, recimo:
 
 `a = 1+5 * 8+1`
 
-Pravkar smo spoznali <Mark>prireditveni stavek</Mark>.
+Pravkar smo spoznali <mark>prireditveni stavek</mark>.
 
 ---
 layout: image-right
@@ -411,7 +411,7 @@ url: 'https://unsplash.com/photos/h6xNSDlgciU'
 ---
 
 # Spremenljivke
-Včasih jim bomo rekli tudi preprosto <Mark>imena</Mark>.
+Včasih jim bomo rekli tudi preprosto <mark>imena</mark>.
 
 Spremenljivko (ang. *variable*) uporabimo za shranjevanje vrednosti izraza.
 
@@ -551,13 +551,13 @@ Opomba: v polja za kodo lahko sproti pišeš. Piši komentarje in jim povej, kaj
   
   `novo_geslo` ni niti približno isto kot `Novo_GESLO`
 
-- izogibamo se imenom vgrajenih funkcij
+- izogibamo se imenom vgrajenih (*built-in*) funkcij
   
   raje rečemo `maks = max(2, 3)`
   
-  in ne `max = max(2, 3)`
+  in ne ~~`max = max(2, 3)`~~
 
-- ne moremo uporabiti teh (rezerviranih) besed:
+- ne smemo uporabiti teh (rezerviranih) besed:
   
 <!-- 
   import keyword 
@@ -585,11 +585,11 @@ Napišimo že kakšen program
 >
 > To je udobnih -1 °C.
 
-Napišimo program, ki bo pretvarjal med °C in °F.
+Napišimo program, ki bo pretvarjal med temperaturo v °F in °C.
 
 ---
 
-# Prvi program: pretvornik med °C in °F
+# Prvi program: pretvornik med °F in °C
 
 Kakšen bo naš algoritem, postopek? Kako ga bomo zakodirali?
 
@@ -684,7 +684,7 @@ Programiranje je udobnejše z integriranim razvojnim okoljem
 # Pogovor z uporabnikom
 
 ## `print`
-Ko želimo uporabnika našega programa o čem obvestiti, to najlaže storimo s funkcijo `print`, ki izpisuje v terminal (lupina/konzola/ukazni poziv). Pravimo tudi, da izpisuje na <Mark>standardni izhod</Mark>.
+Ko želimo uporabnika našega programa o čem obvestiti, to najlaže storimo s funkcijo `print`, ki izpisuje v terminal (lupina/konzola/ukazni poziv). Pravimo tudi, da izpisuje na <mark>standardni izhod</mark>.
 
 ```python
 >>> print('Odgovor na vprašanje o vesolju, življenju in sploh vsem je:', 1+5*8+1, '!'*3)
@@ -703,7 +703,7 @@ Tvoj najljubši okus 🍨? Jogurt z gozdnimi sadeži
 Jogurt z gozdnimi sadeži je tvoj najljubši okus, kajne?
 ```
 
-Pravimo, da funkcija `input` bere s <Mark>standardnega vhoda</Mark>.
+Pravimo, da funkcija `input` bere s <mark>standardnega vhoda</mark>.
 
 ---
 
@@ -751,7 +751,7 @@ Navodila za Thonnyja:
    - v orodni vrstici kliknemo na gumb <img class="inline w-8" src="/img/thonny-debug.png" /> ali
    - v meniju izberemo `Poženi` → `Razhroščevanje trenutne skripte (lepše)` ali
    - pritisnemo kombinacijo tipk <kbd>Ctrl</kbd> + <kbd>F5</kbd>.
-3. Aktivira se razhroščevalnik, ki ustavi izvajanje programa <Mark>pred izvajanjem</Mark> prvega stavka.
+3. Aktivira se razhroščevalnik, ki ustavi izvajanje programa <mark>pred izvajanjem</mark> prvega stavka.
    <img class="inline w-100" src="/img/thonny-debug-highlight.png" />
 4. Skozi program se sedaj premikamo z ukazi:
 
@@ -785,7 +785,7 @@ Navodila za Thonnyja:
 
     Kako je prišel tja? Napačno smo predpostavljali, da se bo vpisana temperatura uporabila kot število.
 
-    Pa se ni. Korenine te napake rastejo iz funkcije `input`, ki vrne uporabnikov odgovor in to <Mark>vedno kot niz</Mark>.
+    Pa se ni. Korenine te napake rastejo iz funkcije `input`, ki vrne uporabnikov odgovor in to <mark>vedno kot niz</mark>.
 
 9. Kako streti tega hrošča? Vrednost v `temp_F` moramo pretvoriti v število.
 

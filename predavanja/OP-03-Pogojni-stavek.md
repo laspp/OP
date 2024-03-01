@@ -103,7 +103,7 @@ Narišimo v Scratchu in napišimo v Pythonu
 
 <div>
 
-Python nima preoblek tako kot Praskež, oranžno bistvo pa je enako. Spoznajmo <Mark>*če*</Mark> (`if`).
+Python nima preoblek tako kot Praskež, oranžno bistvo pa je enako. Spoznajmo <mark>*če*</mark> (`if`).
 
 ```python
 videz = 'navaden'
@@ -144,7 +144,7 @@ Praskež potrebuje obutev, tudi če ni mraza. V omaro mu dodamo superge.
 
 <div>
 
-Spoznajmo <Mark>blok *sicer*</Mark> (`else`) pogojnega stavka.
+Spoznajmo <mark>blok *sicer*</mark> (`else`) pogojnega stavka.
 
 ```python
 videz = 'navaden'
@@ -188,7 +188,7 @@ Kaj pa, ko je vroče? Veliko tekočine in pokrivalo na glavo!
 
 <div>
 
-Spoznajmo <Mark>ugnezdeni</Mark> pogojni stavek.
+Spoznajmo <mark>ugnezdeni</mark> pogojni stavek.
 
 ```python
 videz = 'navaden'
@@ -243,7 +243,7 @@ print('Zdaj grem lahko ven! Moj videz:', videz)
 
 <div>
 
-Spoznajmo <Mark>sicer-če</Mark> (`elif`) in zapišimo drugače.
+Spoznajmo <mark>sicer-če</mark> (`elif`) in zapišimo drugače.
 
 ```python
 videz = 'navaden'
@@ -332,7 +332,7 @@ if pogoj:
 stavek_C
 ```
 
-V Pythonu bloke stavkov že na daleč opazimo, saj se od drugih delov kode ločijo po <Mark>zamiku</Mark>!
+V Pythonu bloke stavkov že na daleč opazimo, saj se od drugih delov kode ločijo po <mark>zamiku</mark>!
 
 </div>
 <div>
@@ -404,7 +404,7 @@ linkStyle 2 color:red;
 
 # Ugnezdeni pogojni stavek
 
-Naredimo hierarhijo blokov pogojnih stavkov. <Mark>Pazimo na dodatne zamike</Mark>.
+Naredimo hierarhijo blokov pogojnih stavkov. <mark>Pazimo na dodatne zamike</mark>.
 
 ```python
 stavek_A
@@ -593,7 +593,7 @@ Uporabimo jih za sestavljanje pogoja.
 
 <br/>
 
-Vsi primeri v tabeli so <Mark>logični izrazi</Mark>. Rezultat logičnega izraza je tipa `bool`.
+Vsi primeri v tabeli so <mark>logični izrazi</mark>. Rezultat logičnega izraza je tipa `bool`.
 
 ---
 

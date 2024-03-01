@@ -159,7 +159,7 @@ Ja, hm, zdaj pa izpišimo `ime` ...
 'jože'
 ```
 
-Torej se ni nič spremenilo. Kako to? Preberi še enkrat podnaslov. <Mark>Če želimo nespremenljivemu objektu kaj dodati/odvzeti/spremeniti, moramo izdelati nov objekt.</Mark>
+Torej se ni nič spremenilo. Kako to? Preberi še enkrat podnaslov. <mark>Če želimo nespremenljivemu objektu kaj dodati/odvzeti/spremeniti, moramo izdelati nov objekt.</mark>
 
 Ko kličemo metodo `ime.capitalize()`, se v resnici izdela in *vrne* nov niz, ki se začne z veliko začetnico. Če ga želimo "shraniti", ga moramo poimenovati (prirediti imenu):
 
@@ -542,7 +542,7 @@ Terka (`tuple`) je podatkovni tip, ki je podoben seznamu, vendar se hkrati od nj
 ## Razlike
 
 - terko definiramo z okroglimi oklepaji ali kar brez vseh oklepajev: `terka = True, 1, 'a'`
-- <Mark>terke ni spremenljiva</Mark>, seznam je. Terka je podobna nizu, ki je tudi nespremenljiv.
+- <mark>terke ni spremenljiva</mark>, seznam je. Terka je podobna nizu, ki je tudi nespremenljiv.
 - terka s samo enim elementom je malo nenavadna:
   `t = ('Samo',)`. Vejica za prvim elementom je obvezna. Pri seznamu ni obvezna: `s = ['Samo']`, lahko tudi `s = ['Samo',]`
 - terke so učinkovitejše: porabijo manj spomina računalnika, procesor jih obdeluje hitreje

@@ -291,7 +291,7 @@ url: 'https://unsplash.com/photos/rgRbqFweGF0'
 ### Program je ...
 > "Skupek dejanj v določenem zaporedju, ki jih naprava opravi sama." (SSKJ)
 
-Zaporedju dejanj lahko rečemo tudi navodilo, postopek, ali <Mark>algoritem</Mark>.
+Zaporedju dejanj lahko rečemo tudi navodilo, postopek, ali <mark>algoritem</mark>.
 </div>
 
 <div v-click>
@@ -300,7 +300,7 @@ Zaporedju dejanj lahko rečemo tudi navodilo, postopek, ali <Mark>algoritem</Mar
 
 > Izdelava algoritma, ki se izvede na računalniku.
 
-Dragocena veščina: <Mark>algoritmično razmišljanje</Mark>. Razbijanje problema na podprobleme.
+Dragocena veščina: <mark>algoritmično razmišljanje</mark>. Razbijanje problema na podprobleme.
 </div>
 
 <div v-click>
@@ -578,9 +578,9 @@ Kako računalniku povedati, kaj naj naredi?
 
 <div v-click>
 
-&rarr; Tako, da "govorimo" <Mark>programski jezik</Mark>. Po možnosti takega, ki je človeku prijazen.
+&rarr; Tako, da "govorimo" <mark>programski jezik</mark>. Po možnosti takega, ki je človeku prijazen.
 
-Pravimo tudi, da napišemo <Mark>izvorno kodo</Mark> programa.
+Pravimo tudi, da napišemo <mark>izvorno kodo</mark> programa.
 
 </div>
 
@@ -762,7 +762,7 @@ Dokler sta obe števili različni, odštevaj manjše število od večjega.
 ---
 
 # Evklidov algoritem: narišimo
-Narišimo algoritem v obliki <Mark>diagrama poteka</Mark> kot zaporedje akcij (kapsula) in odločitev (romb)
+Narišimo algoritem v obliki <mark>diagrama poteka</mark> kot zaporedje akcij (kapsula) in odločitev (romb)
 
 ```mermaid {theme: 'neutral', scale: 0.9}
 %%{ init: { 'flowchart': { 'curve': 'basis' } } }%%

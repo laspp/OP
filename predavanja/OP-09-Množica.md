@@ -403,7 +403,7 @@ Izračunamo lahko tudi razliko več množic, npr.:
 
 <br/>
 
-<Mark>Pozor:</Mark> $A-B$ ni enako kot $B-A$.
+<mark>Pozor:</mark> $A-B$ ni enako kot $B-A$.
 
 ::right::
 

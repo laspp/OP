@@ -81,7 +81,7 @@ Naprave za shranjevanje podatkov
 
 - glavni pomnilnik
 
-Pravimo mu tudi RAM (ang. *random access memory*). <Mark>Ko računalnik ugasnemo, se vsi podatki v glavnem pomnilniku izgubijo</Mark>. Hm ...
+Pravimo mu tudi RAM (ang. *random access memory*). <mark>Ko računalnik ugasnemo, se vsi podatki v glavnem pomnilniku izgubijo</mark>. Hm ...
 
 <Image src="/img/harrison-broadbent-ING1Uf1Fc30-unsplash.jpg" caption="Fotografija: Harrison Broadbent" url="https://unsplash.com/photos/ING1Uf1Fc30"/>
 
@@ -285,7 +285,7 @@ Odpiranje, branje, pisanje, zapiranje
 
 ::left::
 
-Dogovor: <Mark>obravnavali bomo samo besedilne datoteke</Mark> - to so datoteke, katerih vsebino lahko uspešno interpretiramo kot znake.
+Dogovor: <mark>obravnavali bomo samo besedilne datoteke</mark> - to so datoteke, katerih vsebino lahko uspešno interpretiramo kot znake.
 
 Tipično zaporedje pri delu z datotekami gre tako:
 
@@ -293,7 +293,7 @@ Tipično zaporedje pri delu z datotekami gre tako:
 2. Iz datoteke beremo z metodo `read()` ali vanjo pišemo z `write()` oziroma `print()`.
 3. Datoteko zapremo z metodo `close()`.
 
-Pravilo: <Mark>kar odpreš tudi zapri.</Mark>
+Pravilo: <mark>kar odpreš tudi zapri.</mark>
 
 Če pustimo datoteko odprto, do nje ne morejo dostopati drugi procesi.
 
@@ -437,7 +437,7 @@ Delovanje:
 # Odpiranje datoteke
 Za branje in pisanje
 
-Datoteko lahko odpremo za <Mark>branje in pisanje hkrati</Mark>: drugemu argumentu (`mode`) funkcije `open()` dodamo `+`.
+Datoteko lahko odpremo za <mark>branje in pisanje hkrati</mark>: drugemu argumentu (`mode`) funkcije `open()` dodamo `+`.
 
 <div class="grid grid-cols-3 gap-x-10">
 

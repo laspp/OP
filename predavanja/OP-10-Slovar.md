@@ -79,7 +79,7 @@ Prejšnji teden smo spoznali množico. Slovar je njen bratranec.
 | elementi niso urejeni, njihov vrstni red je poljuben |  <div v-click>✓</div> |  <div v-click>✘</div> |
 | elementov ne označujemo z indeksi |  <div v-click>✓</div> |  <div v-click>✓</div> |
 
-[^1]: Temu, čemur pri množici rečemo element množice, je pri slovarju <Mark>ključ</Mark>.
+[^1]: Temu, čemur pri množici rečemo element množice, je pri slovarju <mark>ključ</mark>.
 
 ---
 layout: image-right
@@ -116,7 +116,7 @@ Element, ključ, vrednost
 
 ::left::
 
-Slovar je zbirka <Mark>elementov</Mark> (ang. *items*), ki so oblike <Mark>ključ: vrednost</Mark> (ang. *key: value*).
+Slovar je zbirka <mark>elementov</mark> (ang. *items*), ki so oblike <mark>ključ: vrednost</mark> (ang. *key: value*).
 
 Za *ključ* veljajo isti zakoni kot za element množice - biti mora edinstven in nespremenljiv ("kamen").
 
@@ -274,7 +274,7 @@ KeyError: 'sir'
 
 Ključ `'sir'` ne obstaja, zato dobimo napako tipa `KeyError`.
 
-Da se izognemo napaki, najprej preverimo, ali ključ obstaja. Uporabimo <Mark>operator vsebovanosti</Mark> `in`:
+Da se izognemo napaki, najprej preverimo, ali ključ obstaja. Uporabimo <mark>operator vsebovanosti</mark> `in`:
 
 ```python
 >>> 'sir' in shramba

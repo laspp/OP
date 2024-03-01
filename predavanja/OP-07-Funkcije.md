@@ -293,7 +293,7 @@ layout: two-cols-title
 
 ::left::
 
-"Prostor" zunaj funkcije se imenuje <Mark>globalni imenski prostor</Mark>. Funkcija ima svoj imenski prostor, ki mu pravimo <Mark>lokalni imenski prostor</Mark>.
+"Prostor" zunaj funkcije se imenuje <mark>globalni imenski prostor</mark>. Funkcija ima svoj imenski prostor, ki mu pravimo <mark>lokalni imenski prostor</mark>.
 
 ```python
 a = 1

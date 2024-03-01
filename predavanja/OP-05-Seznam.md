@@ -114,7 +114,7 @@ Zatakne se mu že pri drugi seriji tekmovanja.
 
 ## Premium <Marker>[met_krompirja_v2.sb3](https://scratch.mit.edu/projects/818300109/)</Marker>
 
-Praskež si omisli <Mark>seznam</Mark>, v katerega beleži dolžine. Ko se mu zahoče,
+Praskež si omisli <mark>seznam</mark>, v katerega beleži dolžine. Ko se mu zahoče,
 izvede del programa za izračun najdaljšega meta oziroma povprečja vseh metov.
 
 ::right::
@@ -138,9 +138,9 @@ ki opisujejo zaporedje podatkov, denimo:
 
 `abeceda = 'ABCČDEFGHIJKLMNOPRSŠTUVZŽ'`.
 
-## Spoznajmo sedaj <Mark>seznam</Mark> (v pythonščini je to `list`).
+## Spoznajmo sedaj <mark>seznam</mark> (v pythonščini je to `list`).
 
-Gre za <Mark>zaporedje elementov, ki so lahko poljubnega podatkovnega tipa</Mark>.
+Gre za <mark>zaporedje elementov, ki so lahko poljubnega podatkovnega tipa</mark>.
 
 ---
 
@@ -208,7 +208,7 @@ Praskež in navadni smrtniki začenjajo štetje z 1.
 
 Programerji začnemo z 0. Vsaj v Pythonu[^1].
 
-Naslovu elementa v seznamu pravimo <Mark>indeks</Mark>. Seznami so torej oštevilčeni oziroma indeksirani.
+Naslovu elementa v seznamu pravimo <mark>indeks</mark>. Seznami so torej oštevilčeni oziroma indeksirani.
 
 ## Koliko je hiš v kraju?
 Dolžino seznama dobimo s funkcijo `len()`.
@@ -440,7 +440,7 @@ seznam[zacetek:konec:korak]
 
 </div>
 
-**Iz seznama `seznam` izrežemo rezino, ki vsebuje elemente z indeksi od vključno `zacetek` do <Mark>ne vključno</Mark> `konec` (torej do `konec-1`), pri čemer se indeksi povečujejo s korakom `korak`.**
+**Iz seznama `seznam` izrežemo rezino, ki vsebuje elemente z indeksi od vključno `zacetek` do <mark>ne vključno</mark> `konec` (torej do `konec-1`), pri čemer se indeksi povečujejo s korakom `korak`.**
 
 Števila `zacetek`, `konec` in `korak` so opcijski - lahko katerega od njih tudi izpustimo. Pri tem velja:
 
@@ -501,7 +501,7 @@ Funkcija vrne seznam zaporednih celih števil (`int`) od vključno `zacetek` do 
 <div class="grid grid-cols-2 gap-x-10">
 <div>
 
-Funkcija `range()` vrne nekaj, čemur rečemo <Mark>generator</Mark> - to pomeni, da nam izroči elemente seznama šele tedaj, ko jih zares potrebujemo.
+Funkcija `range()` vrne nekaj, čemur rečemo <mark>generator</mark> - to pomeni, da nam izroči elemente seznama šele tedaj, ko jih zares potrebujemo.
 
 ```python
 >>> range(1, 20, 2)
@@ -692,7 +692,7 @@ layout: two-cols-title
 ::title::
 # Objekti - zelo na hitro
 
-V Pythonu so vse *stvari* v resnici <Mark>objekti</Mark>. Objekti imajo svoje lastnosti in funkcije, ki jim pravimo metode. Do njih pridemo s piko, recimo:
+V Pythonu so vse *stvari* v resnici <mark>objekti</mark>. Objekti imajo svoje lastnosti in funkcije, ki jim pravimo metode. Do njih pridemo s piko, recimo:
 
 `ime_objekta.ime_metode(argumenti)`
 

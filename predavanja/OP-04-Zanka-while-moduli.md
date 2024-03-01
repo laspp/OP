@@ -141,12 +141,12 @@ To ni zanka za lov na zajce, bolj je podobna *loopingu*.
 
 Zanka je sestavljena iz:
 
-- <Mark>glave</Mark> (preverjanje pogoja) in
-- <Mark>telesa</Mark> (stavki v bloku).
+- <mark>glave</mark> (preverjanje pogoja) in
+- <mark>telesa</mark> (stavki v bloku).
 
 Zanka ponavlja stavke v svojem bloku, dokler je vstopni pogoj resničen.
 
-Enemu obhodu zanke pravimo tudi <Mark>iteracija</Mark>.
+Enemu obhodu zanke pravimo tudi <mark>iteracija</mark>.
 
 Glava zanke vsebuje pogoj, ki ga lahko sestavimo na enak način kot pri pogojnemu stavku.
 
@@ -306,7 +306,7 @@ Ko namestimo Python, se namesti tudi množica dodatnih modulov, ki pa jih moramo
 # Imenski prostor
 <br/>
 
-Ko zaženemo program v Pythonu, se ustvari <Mark>imenski prostor</Mark>, v katerem živijo imena spremenljivk, funkcij in podobna golazen. Funkcija `dir()` nam to lepo izpiše. Zna pa izpisati tudi vse funkcije, ki jih neko ime ima.
+Ko zaženemo program v Pythonu, se ustvari <mark>imenski prostor</mark>, v katerem živijo imena spremenljivk, funkcij in podobna golazen. Funkcija `dir()` nam to lepo izpiše. Zna pa izpisati tudi vse funkcije, ki jih neko ime ima.
 
 <div class="code-lg">
 
