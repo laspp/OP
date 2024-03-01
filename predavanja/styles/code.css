@@ -1,3 +1,17 @@
+.code-lg code {
+    font-size: 1.0rem;
+    line-height: 1.5rem;
+}
+
+.code-xl code {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.code-no-ligatures code {
+    font-family: 'Fira Code', Consolas, monospace;
+}
+
 :not(pre) > code::before, :not(pre) > code::after {
     content: none;
 }
@@ -7,10 +21,10 @@
     border-color: rgb(156, 163, 175, 0.2);
 }
 
-.error > .slidev-code-wrapper > pre > .slidev-code {
+.error > .slidev-code-wrapper > pre.slidev-code {
     background: rgba(226, 122, 122, 0.301) !important;
 }
 
-.error > pre > .slidev-code {
+.error > pre.slidev-code {
     background: rgba(226, 122, 122, 0.301) !important;
 }

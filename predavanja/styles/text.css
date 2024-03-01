@@ -1,3 +1,7 @@
+s {
+    text-decoration: line-through rgba(207, 31, 31, 0.3) 3px;
+}
+
 .footnotes-sep {
     display: none;
 }
@@ -29,20 +33,6 @@
 
 .icon-btn {
     opacity: 1.0;
-}
-
-.code-lg code {
-    font-size: 1.0rem;
-    line-height: 1.5rem;
-}
-
-.code-xl code {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-}
-
-.code-no-ligatures code {
-    font-family: 'Fira Code', Consolas, monospace;
 }
 
 .marker a, .marker a:hover {
