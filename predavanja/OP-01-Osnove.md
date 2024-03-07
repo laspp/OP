@@ -21,7 +21,7 @@ layout: cover
 fonts:
   sans: Roboto
   serif: Roboto Slab
-  mono: Fira Code
+  mono: Fira Mono
 ---
 
 <!-- 

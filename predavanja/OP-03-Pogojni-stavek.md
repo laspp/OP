@@ -22,20 +22,12 @@ layout: cover
 fonts:
   sans: Roboto
   serif: Roboto Slab
-  mono: Fira Code
+  mono: Fira Mono
 ---
 
 <!-- 
-1. Spremeni `vite.config.ts`, da publicDir kaže na ustrezno mapo gradiva za predavanje 
-    publicDir: './assets/03'
-   Popravi ProgressBar completed na ustrezno številko predavanja
-2. npx slidev OP-03-Pogojni-stavek.md
-3. npx slidev --remote=geslo OP-03-Pogojni-stavek.md 
-  če si presenter, potem uporabi url, ki ima notri ?password=geslo, da te ne gnjavi za vpis gesla
-4. npx slidev build --out dist/03 OP-03-Pogojni-stavek.md
-5. npx slidev export OP-03-Pogojni-stavek.md
-6. gswin64 -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/printer -dNOPAUSE -dQUIET -dBATCH -sOutputFile=output.pdf OP-03-Pogojni-stavek.pdf
-7. move output.pdf OP-03-Pogojni-stavek.pdf
+./present.sh 3
+./export_pdf.sh 3
 -->
 
 <ProgressBar bgcolor="#e54240" :completed=3 :total=13 />
@@ -220,7 +212,7 @@ Scratch tega ne pozna ...
 
 <div class="border-r-2 px-4">
 
-Ugnezdeni pogojni stavek iz prejšnje strani:
+Ugnezdeni pogojni stavek s prejšnje strani:
 
 ```python
 videz = 'navaden'
@@ -261,7 +253,7 @@ else:
 print('Zdaj grem lahko ven! Moj videz:', videz)
 ```
 
-Recimo, da je program zdaj malo bolj pregleden.
+✨ Odlično, program je zdaj malo bolj pregleden!
 
 </div>
 </div>
@@ -582,14 +574,14 @@ linkStyle 2,4,6 color:red;
 # Primerjalni operatorji
 Uporabimo jih za sestavljanje pogoja.
 
-| **operator** | **opis** | **primeri**|     |     |
-| :----------: | :------- | ---------- | --- | --- |
-| `==`  | enak    | `+0 == -0` → `True`  | `1 == 2` → `False` | `'Ana' == 'ana'` → `False` |
-| `!=`  | ni enak | `1 != 1` → `False` | `1 != 2` → `True`  | `'Ana' != 'ana'` → `True`  |
-| `>`   | večji   | `1 > 1` → `False`  | `1 > 2` → `False` | `'Anna' > 'Ana'` → `True` |
-| `>=`  | večji ali enak | `1 >= 1` → `True`  | `1 >= 2` → `False` | `'ABC' >= 'ABD'` → `False` |
-| `<`   | manjši | `0.33 < 1/3` → `True`  | `False < True` → `True` | `'A' < 'a'` → `True` |
-| `<=`  | manjši ali enak | `0.0 <= -0.0` → `True`  | `True <= False` → `False` | `'1a' <= '2a'` → `True` |
+| **operator** | **opis** | **primeri**|     |
+| :----------: | :------- | ---------- | --- |
+| `==`  | enak    | `+0 == -0` → `True`  | `'Ana' == 'ana'` → `False` |
+| `!=`  | ni enak | `1 != 1` → `False`   | `'Ana' != 'ana'` → `True`  |
+| `>`   | večji   | `1 > 1` → `False`    | `'Anna' > 'Ana'` → `True` |
+| `>=`  | večji ali enak | `1 >= 1` → `True`  | `'ABC' >= 'ABD'` → `False` |
+| `<`   | manjši | `0.33 < 1/3` → `True`  | `'A' < 'a'` → `True` |
+| `<=`  | manjši ali enak | `0.0 <= -0.0` → `True`  | `'1a' <= '2a'` → `True` |
 
 <br/>
 
@@ -602,6 +594,7 @@ Vsi primeri v tabeli so <mark>logični izrazi</mark>. Rezultat logičnega izraza
 
 <div class="grid grid-cols-2 gap-x-4">
 <div>
+<div v-click>
 
 ## `not`
 
@@ -619,6 +612,9 @@ Pomeni "ne", zanikanje. Ima prednost pred `and` in `or`.
 
 </div>
 </div>
+</div>
+
+<div v-click>
 
 ## `and`
 
@@ -642,9 +638,12 @@ Pomeni "in", hkratnost. Ima prednost pred `or`.
 
 </div>
 </div>
+</div>
 
 </div>
 <div>
+
+<div v-click>
 
 ## `or`
 
@@ -668,13 +667,17 @@ Pomeni "ali", izbirnost.
 
 </div>
 </div>
+</div>
 <br/>
 <br/>
+
+<div v-click>
 
 Logični izraz lahko vsebuje kombinacijo logičnih operatorjev, denimo:
 
 `True or False and not False` → `True`
 
+</div>
 </div>
 </div>
 
@@ -707,7 +710,7 @@ Python pozna tudi operatorja `in` in `not in`, ki povesta, ali je neka stvar vse
 `'b' not in 'RaBarBara'` → `True`
 
 Na ta način lahko preverimo, ali niz vsebuje določen drug niz oziroma določeno črko.
-Uporabna sta tudi pri rečeh, ki jih še ne poznamo (seznami, terke, množice, slovarji).
+Uporabna sta tudi pri rečeh, ki jih za zdaj še ne poznamo (seznami, terke, množice, slovarji).
 
 ---
 
@@ -798,11 +801,10 @@ Recimo, da bi radi izračunali izraz `x**y > x*y`, vendar samo, če sta tako `x`
 True
 ```
 
-V zgornjem logičnem izrazu imamo tri trditve, med katerimi je operator `and`. Celoten logični izraz bo v tem primeru resničen samo takrat, ko bodo vse tri trditve resnične. Velja: `False and karkoli` je `False`.
-Prva trditev `x < 1000` je resnična, zato moramo preveriti tudi drugo trditev. Ta je prav tako resnična, saj ima `y` vrednost 4 kar je manj kot 1000. Sledi še zadnji del izraza, ki ga moramo izračunati, če želimo vedeti, ali je celoten izraz resničen ali ne. Zdaj izračunamo `x**y` in `x*y` ter ju primerjamo. Rezultat je `True`.
+V zgornjem logičnem izrazu imamo tri trditve, med katerimi je operator `and`. Celoten logični izraz bo v tem primeru resničen (`True`) samo takrat, ko bodo resnične vse tri trditve. Prva trditev `x < 1000` je resnična, zato moramo preveriti tudi drugo trditev. Ta je prav tako resnična, saj ima `y` vrednost 4 kar je manj kot 1000. Sledi še zadnji del izraza, ki ga moramo izračunati, če želimo vedeti, ali je celoten izraz resničen ali ne. Zdaj izračunamo `x**y` in `x*y` ter ju primerjamo. Rezultat je `True`.
 
 Kaj pa, če nastavimo tako: `x = 3` in `y = 4000`?
-Prva trditev, da je 3 < 1000, je resnična. Gremo naprej. Pri drugi se zatakne, ker 4000 ni manjše od 1000. Dobimo `False`, ki pri uporabi operatorja `and` naredi kratek stik in varovalko "zabriše ven" -- končamo z računanjem celotnega izraza, ker točno vemo, da bo rezultat vedno `False`. S tem se izognemo potratnemu računanju `3**4000`. Podobno velja za operator `or`, vendar ravno obratno: logični izraz računamo po kosih vse dokler ne naletimo na `True` -- tam se ustavimo. Velja: `True or karkoli` je `True`.
+Prva trditev, da je 3 < 1000, je resnična. Gremo naprej. Pri drugi se zatakne, ker 4000 ni manjše od 1000. Dobimo `False`, ki pri uporabi operatorja `and` naredi kratek stik in varovalko "zabriše ven" -- končamo z računanjem celotnega izraza, ker točno vemo, da bo rezultat vedno `False`. S tem se izognemo potratnemu računanju `3**4000`. Podobno velja za operator `or`, vendar ravno obratno: logični izraz računamo po kosih vse dokler ne naletimo na `True` -- tam se ustavimo.
 
 ---
 layout: image-right
