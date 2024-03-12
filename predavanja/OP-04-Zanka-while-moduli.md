@@ -25,19 +25,6 @@ fonts:
   mono: Fira Mono
 ---
 
-<!-- 
-1. Spremeni `vite.config.ts`, da publicDir kaže na ustrezno mapo gradiva za predavanje 
-    publicDir: './assets/04'
-   Popravi ProgressBar completed na ustrezno številko predavanja
-2. npx slidev OP-04-Zanka-while-moduli.md
-3. npx slidev --remote=geslo OP-04-Zanka-while-moduli.md 
-  če si presenter, potem uporabi url, ki ima notri ?password=geslo, da te ne gnjavi za vpis gesla
-4. npx slidev build --out dist/04 OP-04-Zanka-while-moduli.md
-5. npx slidev export OP-04-Zanka-while-moduli.md
-6. gswin64 -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/printer -dNOPAUSE -dQUIET -dBATCH -sOutputFile=output.pdf OP-04-Zanka-while-moduli.pdf
-7. move output.pdf OP-04-Zanka-while-moduli.pdf
--->
-
 <ProgressBar bgcolor="#e54240" :completed=4 :total=13 />
 
 # {{ $slidev.configs.title }}
@@ -100,7 +87,7 @@ class: text-center
 
 # Pogojni stavek
 
-```mermaid {theme: 'neutral', scale: 0.85}
+```mermaid {theme: 'neutral', scale: 0.75}
 graph TD
 A([stavek_A])
 B([stavek_B])
@@ -118,7 +105,7 @@ linkStyle 2 color:red;
 
 # Zanka
 
-```mermaid {theme: 'neutral', scale: 0.85}
+```mermaid {theme: 'neutral', scale: 0.75}
 graph TD
 A([stavek_A])
 B([stavek_B])
@@ -154,7 +141,7 @@ Glava zanke vsebuje pogoj, ki ga lahko sestavimo na enak način kot pri pogojnem
 
 <div class="text-center">
 
-```mermaid {theme: 'neutral', scale: 0.85}
+```mermaid {theme: 'neutral', scale: 0.75}
 graph TD
 start([...])
 A([stavek_A])
@@ -415,6 +402,35 @@ Iz modula uvozimo vse njegove sestavne dele (funkcije, konstante, ...). Ponovno 
 ```
 
 ---
+layout: image-right
+image: '/img/ivan-diaz-YOy-ek-aBR0-unsplash.jpg'
+caption: 'Fotografija: Ivan Diaz'
+url: 'https://unsplash.com/photos/YOy-ek-aBR0'
+---
+
+# 3, 2, 1, vzlet! <Marker>odstevanje</Marker>
+
+<div class="code-xl">
+
+```python
+import time
+
+sekund_do_vzleta = 3
+while sekund_do_vzleta:
+    print(
+        sekund_do_vzleta,
+        ', ',
+        sep='',
+        end=''
+        )
+    time.sleep(1)
+    sekund_do_vzleta -= 1
+print('vzlet!')
+```
+
+</div>
+
+---
 
 # Praskeževa igra v Pythonu <Marker>ugibaj_v4</Marker>
 Kot osnovo vzamemo kodo v Scratchu [ugibaj_v2](https://scratch.mit.edu/projects/815241970) in dodamo: dovolimo do 5 poskusov, merimo čas igranja.
@@ -444,35 +460,6 @@ print('Izbral sem število', izbrano_stevilo)
 toc = perf_counter()
 print('Čas igranja:', round(toc-tic), 'sekund.')
 ```
-
----
-layout: image-right
-image: '/img/ivan-diaz-YOy-ek-aBR0-unsplash.jpg'
-caption: 'Fotografija: Ivan Diaz'
-url: 'https://unsplash.com/photos/YOy-ek-aBR0'
----
-
-# 3, 2, 1, vzlet! <Marker>odstevanje</Marker>
-
-<div class="code-xl">
-
-```python
-import time
-
-sekund_do_vzleta = 3
-while sekund_do_vzleta:
-    print(
-        sekund_do_vzleta,
-        ', ',
-        sep='',
-        end=''
-        )
-    time.sleep(1)
-    sekund_do_vzleta -= 1
-print('vzlet!')
-```
-
-</div>
 
 ---
 
