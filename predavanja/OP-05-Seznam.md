@@ -25,19 +25,6 @@ fonts:
   mono: Fira Mono
 ---
 
-<!-- 
-1. Spremeni `vite.config.ts`, da publicDir kaže na ustrezno mapo gradiva za predavanje 
-    publicDir: './assets/05'
-   Popravi ProgressBar completed na ustrezno številko predavanja
-2. npx slidev OP-05-Seznam.md
-3. npx slidev --remote=geslo OP-05-Seznam.md 
-  če si presenter, potem uporabi url, ki ima notri ?password=geslo, da te ne gnjavi za vpis gesla
-4. npx slidev build --out dist/05 OP-05-Seznam.md
-5. npx slidev export OP-05-Seznam.md
-6. gswin64 -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/printer -dNOPAUSE -dQUIET -dBATCH -sOutputFile=output.pdf OP-05-Seznam.pdf
-7. move output.pdf OP-05-Seznam.pdf
--->
-
 <ProgressBar bgcolor="#e54240" :completed=5 :total=13 />
 
 # {{ $slidev.configs.title }}
@@ -75,7 +62,7 @@ caption: 'Fotografija: Łukasz Rawa'
 ---
 
 # Met krompirja
-Bodoča olimpijska disciplina, Praskež se uri za zapisnikarja. Svetovni rekord je 101,9 m.
+Bodoča olimpijska disciplina. Praskež se uri za zapisnikarja. Svetovni rekord je 101,9 m.
 
 - Tekmovalci lučajo krompir. Kdor ga vrže najdlje, je zmagovalec.
 
@@ -392,7 +379,7 @@ Navpične črtice na spodnji sliki označujejo mesta, kjer lahko zarežemo v sez
 <arrow x1="95" y1="260" x2="175" y2="260" color="#e54240" width="2" />
 <arrow x1="200" y1="260" x2="505" y2="260" color="#e54240" width="2" />
 
-Rezino v Pythonu določimo tako, da povemo njen začetni in končni indeks (lahko tudi korak, počakajmo).
+Rezino v Pythonu določimo tako, da povemo njen začetni in končni indeks (kot bomo videli, tudi *korak*).
 
 <div class="code-lg">
 
@@ -965,12 +952,9 @@ Brisanje elementov je mogoče tudi s stavkom `del`:
 
 ```python
 >>> seznam = [1, 3, 2, 3]
->>> del seznam[1]
->>> seznam 
-[1, 2, 3]
 >>> del seznam[0:2]
->>> seznam
-[3]
+>>> seznam 
+[2, 3]
 ```
 
 ---
