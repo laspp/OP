@@ -7,7 +7,8 @@ if [[ $# -ne 1 ]]; then
 fi
 
 # Padding with leading zeros (1 -> 01)
-chapter=$(printf "%02d" "$1")
+chapter_no_zeros=$(echo $1 | sed 's/^0*//')
+chapter=$(printf "%02d" "$chapter_no_zeros")
 
 # Find .md files with "OP-<chapter>-<title>*.md" in their name
 pattern="OP-$chapter-*.md"
@@ -37,7 +38,7 @@ filename=$(basename "$files")
 filename="${filename%.*}"
 
 echo "Changing publicDir in vite.config.ts ..."
-bash change_public_dir.sh $chapter
+bash change_public_dir.sh $chapter_no_zeros
 
 echo "Running slidev export ..."
 pnpm slidev export $filename.md
