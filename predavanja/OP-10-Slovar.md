@@ -243,8 +243,6 @@ Pravkar smo naredili nekaj, kar se obnaša podobno kot seznam.
 {0: 'banana', 1: 'kruh'}
 ```
 
-Uporabno? Kaj pa vem. Je pa poučno.
-
 ---
 layout: two-cols-title
 ---
@@ -455,33 +453,6 @@ Vrne elemente slovarja, ki so organizirani v seznam terk (nam že poznana oblika
 dict_items([('banana', 4), ('kruh', 1), ('mleko', 12)])
 ```
 
-## `slovar.get(k, d=None)`
-
-Metoda `get()` nam vrne vrednost pod ključem `k`, če ta obstaja. Če ne, nam vrne vrednost `d`, ki je privzeto `None`.
-
-```python
->>> shramba.get('mleko', 'Živila ni v shrambi.')
-12
->>> shramba.get('sok', 'Živila ni v shrambi.')
-'Živila ni v shrambi.'
-```
-
-<br/>
-
-
-
-## slovar.clear()
-
-## slovar.pop(k)
-
-## slovar.popitem()
-
-## slovar.update(slovar2)
-
-## slovar.fromkeys
-
-## slovar.copy()
-
 ---
 layout: two-cols
 ---
@@ -542,7 +513,6 @@ layout: two-cols
 ---
 
 # Metode slovarja
-Še tri
 
 ## `dict.fromkeys(z, v=None)`
 
@@ -553,6 +523,8 @@ Zgradi slovar iz zaporedja `z` (niz, seznam, terka, ...), pri čemer vsi element
 >>> ocene
 {'Janko': 5, 'Metka': 5} 
 ```
+
+<br/>
 
 ## `slovar.popitem()`
 

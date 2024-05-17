@@ -718,7 +718,7 @@ Primer branja iz datoteke, obdelave podatkov in zapisa v datoteko
 
 ::left::
 
-Šef restavracije sestavlja jedilnik v posebnem programu, iz katerega lahko podatke tudi izvozi v datoteko CSV. ki je videti tako:
+Šef restavracije sestavlja jedilnik v posebnem programu, iz katerega lahko podatke tudi izvozi v datoteko CSV, ki je videti tako:
 
 ```
 01.05.2023,mesni cmoki
